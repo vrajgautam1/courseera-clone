@@ -1,0 +1,178 @@
+body {
+    font-family: sans-serif !important;
+}
+
+
+.css-6ecy9b {
+    font-size: 1rem;
+    font-weight: normal;
+    color: #646464;
+    margin: 1rem 0;
+}
+
+.css-6ecy9b span {
+    white-space: pre;
+}
+
+.img-fluid {
+    border-radius: 70px 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+@media (min-width: 768px) {
+    .css-6ecy9b {
+        font-size: 1.25rem;
+    }
+}
+
+.feature {
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px, rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
+}
+
+#featured-3 {
+    background-color: #F5F7F8 !important;
+}
+
+#CARD {
+    display: flex;
+    justify-content: center;
+    border-radius: 10px !important;
+}
+
+/* Big-card section ----------------------------*/
+
+.btn-group-toggle .btn {
+    margin-bottom: 0.5rem;
+    border-radius: 90px !important;
+}
+
+.btn-group-toggle .btn input {
+    position: absolute;
+    clip: rect(0, 0, 0, 0);
+    pointer-events: none;
+}
+
+/* card ----------------*/
+
+.container {
+    padding: 40px 0;
+}
+
+.font-weight-bold {
+    font-weight: bold;
+}
+
+h2,
+h3 {
+    color: #333;
+}
+
+#img {
+    border-radius: none !important;
+    box-shadow: none;
+}
+
+#pro-card {
+    border: none;
+}
+
+/* -------------------- */
+
+.custom-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    padding: 20px;
+    border: 1px solid #dee2e6;
+    border-radius: 0.375rem;
+}
+
+.custom-card .top-section,
+.custom-card .bottom-section {
+    flex: 1;
+}
+
+.custom-card .top-section {
+    align-self: flex-end;
+}
+
+.custom-card .bottom-section {
+    align-self: flex-start;
+}
+
+/* Crousal slider section --------------------------------*/
+
+#carousel-slider-images{
+    display: relative;
+}
+
+.carousel-item iframe {
+    width: 100%;
+    height: 400px !important;
+}
+
+.carousel-item img {
+    width: 100%;
+    height: 400px !important;
+}
+
+#crousal-slider-images {
+    background-color: #E5E7E9 !important;
+}
+
+@media (min-width: 576px) {
+    .carousel-item iframe {
+        height: 400px;
+    }
+}
+
+@media (min-width: 768px) {
+    .carousel-item iframe {
+        height: 500px;
+    }
+}
+
+@media (min-width: 992px) {
+    .carousel-item iframe {
+        height: 600px;
+    }
+}
+
+
+/* Multiple crousal --------------------------------------*/
+
+#carouselExampleRide {
+    background-color: #F5F7F8 !important;
+}
+
+/* Accordian section ------------------------------------*/
+
+.accordion-body {
+    text-align: start !important;
+}
+
+.accordion-item {
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+}
+
+
+.accordion-header {
+    color: #212529;
+    font-weight: bold;
+    padding: 10px;
+    border: none;
+}
+
+
+.accordion-button {
+    width: 100%;
+}
+
+
+.accordion-body {
+    background-color: #ffffff;
+    padding: 10px;
+}
