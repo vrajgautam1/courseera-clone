@@ -1,0 +1,220 @@
+/*-------------------------------- Fonts ------------------------------*/
+
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  color: #000;
+}
+
+/* 1st dark bg navbar */
+
+#black-navbar {
+  background-color: black !important;
+}
+
+@media (max-width: 1060px) {
+  #black-navbar {
+    display: none;
+  }
+}
+
+.black-navbar-item {
+  padding-top: 3px !important;
+  padding-bottom: 3px !important;
+  font-family: "Source Sans 3", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/*------------------------------------ Main navbar------------------------------------ */
+
+.navbar-toggler {
+    padding: 0px !important;
+    border: none !important;    
+}
+
+.btn {
+  font-family: "Source Sans 3", sans-serif !important;
+  border: 1px solid #0056d2 !important;  
+}
+
+.bi-chevron-down {
+  font-size: 14px !important;
+}
+
+/* search bar */
+.search-bar {
+    position: relative;
+  }
+  
+  .search-bar input[type="search"] {
+     /* Adjust based on icon size and padding */
+  }
+
+  
+  .custom-placeholder::placeholder {
+    font-size: 14px; /* Change to your desired font size */
+    font-family: 'Source Sans 3','Arial', sans-serif; /* Change to your desired font family */
+  }
+
+  #navbarSupportedContent{
+    width:30%;
+  }
+
+  .search-bar {
+    position: relative;
+    width: 500px;
+  }
+  .large-search-box {
+    width: 500px;
+    padding-left: 3rem; /* Adjust based on icon size and padding */
+    font-size: 14px;
+  }
+  .icon-circle {
+    position: absolute;
+    right: 5px; /* Adjust based on desired position */
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #0056d2; /* Bootstrap primary color */
+    border-radius: 50%;
+    width: 30px; /* Adjust based on desired size */
+    height: 30px; /* Adjust based on desired size */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .icon-circle i {
+    color: white;
+    font-size: 16px; /* Adjust based on desired icon size */
+  }
+ 
+  .icon-circle1 {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 36px;
+    width: 36px;
+    background-color: #00347d;
+    color: white; /* Ensure the text color contrasts with the background */
+    font-size: 18px; /* Adjust font size as needed */
+    border-radius: 50%;
+  }
+  
+  .v-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+  }
+
+/* .nav-item>.btn{
+    padding-top: 0.75rem!important;
+    padding-bottom: 0.75rem!important;
+} */
+  /* //////////////////////  */
+  
+  @media (max-width: 992px) {
+    .navbar-brand {
+      flex: 1;
+      text-align: center;
+    }
+
+    .navbar-toggler {
+        padding: 0px !important;
+        border: none !important;    
+    }
+
+    .navbar-toggler {
+      order: -1;
+    }
+
+    #navbarSupportedContent {
+      flex-basis: 100%;
+      justify-content: space-between;
+    }
+
+    .search-bar {
+      width: auto;
+      order: 1;
+      margin-left: auto;
+    }
+
+    .icon-circle {
+      position: static;
+      background: none;
+      color: inherit;
+    }
+
+    .large-search-box {
+      width: auto;
+    }
+
+    .nav-item.d-flex {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
+
+  @media (max-width: 576px) {
+    .navbar-brand img {
+      border: 1px solid #000;
+      height: 16px !important; /* Adjust for smaller screens */
+    }
+
+    .navbar-toggler {
+      order: -1;
+    }
+
+    .search-bar {
+      display: none;
+    }
+
+    .search-icon {
+      display: block;
+    }
+
+    .search-icon-mobile {
+      display: none;
+    }
+
+    .navbar-toggler {
+        padding: 0px !important;
+        border: none !important;    
+    }
+  }
+
+  /* Additional adjustments for the navbar at smaller sizes */
+  .search-icon-mobile {
+    display: none;
+  }
+
+  /* 3rd navbar */
+
+  .pg-indicatornav-links{
+    font-family: "Source Sans 3", 'sans-serif';
+  }
+
+
+/* footer section */
+.footer-links,
+.footer-text {
+  font-size: 14px !important;
+  font-family: "Source Sans 3", sans-serif;
+  text-decoration: none !important;
+}
+
+.footer-heads {
+  color: rgba(55, 58, 60) !important;
+  font-family: "Source Sans 3", sans-serif;
+}
+
+#lower-footer > .link-body-emphasis {
+  text-decoration: none !important;
+}
