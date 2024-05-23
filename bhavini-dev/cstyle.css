@@ -1,0 +1,72 @@
+*{
+    margin: 0 !important;
+    padding: 0;
+    box-sizing: border-box;
+}
+#hero{
+    background-color: midnightblue;
+    height: 200px;
+}
+#degree{
+    margin-left: 30px !important;
+    color: white;
+}
+#navigation{
+    background-color: transparent !important;
+}
+.nav-link{
+    color: black !important;
+    margin-left: 20px !important;
+}
+input{
+    height: 20px !important;
+    width: 20px !important;
+    margin-right: 10px !important;
+}
+#filtter{
+    background: transparent !important;
+}
+#navbarNavDropdown{
+    gap: 20px !important;
+}
+#navlink{
+    width: 20% !important;
+}
+#navlink-1{
+    width: 20% !important;
+}
+#listitem{
+    width: 100% !important;
+    border: 1px solid #a0af11;
+}
+.card{
+    margin: 10px !important;
+}
+.card:hover{
+    box-shadow: 5px 5px #888888;
+}
+.pagination{
+    margin: 10px !important;
+}
+.page-link{
+    font-size: 1rem !important;
+    border: none !important;
+}
+#first-class{
+    background-color: rgb(3, 3, 68) !important ;
+}
+.active{
+    border-radius: 5px !important;
+    margin-left: 5px !important;
+}
+.accordion-button{
+    background-color: transparent !important;
+}
+.aero{
+    border: 1px solid blue !important;
+}
+.card{
+    border: 2px solid #000;
+    height: 300px;
+    padding: 20px;
+}
