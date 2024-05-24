@@ -315,6 +315,8 @@
 }
 .main-card1:hover{
   transform: scale(1.05)!important;
+  font-weight: 500;
+  
 }
 
 /* footer section */
