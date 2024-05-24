@@ -14,7 +14,7 @@ body {
     white-space: pre;
 }
 
-.img-fluid {
+.banner {
     border-radius: 70px 10px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
@@ -52,6 +52,19 @@ body {
     pointer-events: none;
 }
 
+/* Course Card section ---------------------------*/
+
+@media (min-width: 992px) {
+    .col-lg-4 {
+      -ms-flex: 0 0 32%;
+      flex: 0 0 32%;
+      max-width: 32%;
+    }
+  }
+
+
+  
+
 /* card ----------------*/
 
 .container {
@@ -74,31 +87,6 @@ h3 {
 
 #pro-card {
     border: none;
-}
-
-/* -------------------- */
-
-.custom-card {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 100%;
-    padding: 20px;
-    border: 1px solid #dee2e6;
-    border-radius: 0.375rem;
-}
-
-.custom-card .top-section,
-.custom-card .bottom-section {
-    flex: 1;
-}
-
-.custom-card .top-section {
-    align-self: flex-end;
-}
-
-.custom-card .bottom-section {
-    align-self: flex-start;
 }
 
 /* Crousal slider section --------------------------------*/
