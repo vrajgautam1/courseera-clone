@@ -309,6 +309,14 @@
   transform: scaleX(-1)!important;
 }
 
+/* most popular certificates */
+.main-card1{
+  transition: transform 0.5s ease;
+}
+.main-card1:hover{
+  transform: scale(1.05)!important;
+}
+
 /* footer section */
 .footer-links,
 .footer-text {
