@@ -291,6 +291,12 @@
   margin-bottom: 0px !important;
 }
 
+/* most popular courses */
+
+.thumbs-down i {
+  transform: scaleX(-1)!important;
+}
+
 /* footer section */
 .footer-links,
 .footer-text {

@@ -65,6 +65,10 @@
             margin-top: -3px !important;
             padding-bottom: 0 !important;
         }
+
+        .thumbs-down i {
+            transform: scaleX(-1);
+        }
     </style>
 </head>
 
@@ -496,6 +500,25 @@
         <button type="button" class="btn btn-outline-primary border-1 fw-semibold coursera-theme-color">Show 8 more</button>
       </div>
 </section>
+
+<div class="container mt-5">
+    <div class="card">
+        <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <div class="d-flex justify-content-between align-items-center">
+                <div>
+                    <i class="bi bi-hand-thumbs-up"></i>
+                    <span>Like</span>
+                </div>
+                <div class="thumbs-down">
+                    <i class="bi bi-hand-thumbs-down"></i>
+                    <span>Dislike</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
             integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
             crossorigin="anonymous"></script>
