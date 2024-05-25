@@ -15,8 +15,17 @@
 }
 
 .coursera-theme-color{
-  color:#0056d2;
+  color: #0056d2 !important;;
 }
+
+.coursera-theme-bg{
+  color:#0056d2 !important;
+}
+
+.featured-btn1{
+  width: 32%;
+  padding: 3px !important;
+} 
 
 .gray-text{
   color: rgb(99,99,99);
@@ -317,6 +326,40 @@
   transform: scale(1.05)!important;
   font-weight: 500;
   
+}
+
+/* earn your degree  */
+
+.ellipsis {
+  display: inline-block; /* Allows setting width and height */
+  width: 200px; /* Set the desired width */
+  overflow: hidden; /* Hide the overflowing content */
+  text-overflow: ellipsis; /* Show ellipsis for overflow */
+  white-space: nowrap; /* Prevent text from wrapping */
+   /* Optional: Add a border for visibility */
+}
+
+/* get started with free courses */
+.badge{
+  position: absolute;
+  top:20px;
+  left:30px;
+}
+
+/* featured */
+.featuredheading{
+  font-size: 20px !important;
+}
+
+/* categories */
+
+.dark-bg{
+  background-color: #00255D!important;
+}
+
+/* guided-projects */
+.guided-project-card{
+  height: 100%!important;
 }
 
 /* footer section */
