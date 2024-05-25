@@ -1,0 +1,122 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#main{
+    height: 900px !important;
+}
+#hero{
+    height: 500px !important;
+    background-color: rgb(214, 236, 244) !important;
+    display: flex;
+    justify-content: space-around;
+}
+#content{
+    height: 900px;
+    margin-left: 40px !important;
+}
+#linked{
+    font-size: 1.5rem;
+}
+#google-img{
+    margin-top: 80px !important;
+}
+#active{
+    color: rgb(35, 25, 168) !important;
+    background-color: rgb(211, 207, 207) !important;
+}
+#anchor{
+    color: #000;
+}
+#secondary{
+    height: 30px;
+    margin: 5px !important;
+    background-color: rgb(214, 211, 211);
+    color: #000;
+}
+small{
+    font-size: 12px !important;
+    display: flex;
+    align-items: center;
+}
+#box{
+    width: 400px;
+    height: 400px;
+    background-color: white;
+}
+#box-item{
+    height: 400px;
+    width: 400px !important;
+    box-shadow:  10px 20px 20px rgb(177, 175, 175),    -10px -10px 20px  rgb(177, 175, 175),
+    10px -10px 20px rgb(177, 175, 175),
+    -10px 10px 20px  rgb(177, 175, 175);
+}
+i{
+    color: rgb(7, 2, 113) !important;
+}
+#navigation{
+    margin-top: 50px !important;
+}
+#course{
+    text-decoration: none !important;
+}
+#google-c{
+    color: #000 !important;
+}
+#enroll{
+    padding: 10px;
+}
+#master{
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between ;
+}
+#l-business{
+    text-decoration: none;
+}
+#list{
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+#img-content{
+    margin-top: 90px !important;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border: 1px solid #757474;
+    height: 100px;
+}
+#know-more{
+    margin-top: 50px;
+    margin-bottom: 50px !important;
+}
+#read{
+    color: blue;
+    cursor: pointer !important;
+}
+#read-more{
+    color: blue;
+    cursor: pointer !important;
+}
+#acrrording{
+    display: flex;
+}
+@media(max-width:600px){
+    #hero{
+        display: flex;
+        flex-direction: column;
+    }   
+    #content{
+        width: 100%;
+    }
+    #google-img{
+        margin-top: 5px !important;
+    }
+    #content-box{
+        margin-top: 10px;
+       width: 100%;
+    }
+}

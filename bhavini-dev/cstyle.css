@@ -1,5 +1,5 @@
 *{
-    margin: 0 !important;
+    margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
@@ -7,6 +7,7 @@
     background-color: midnightblue;
     height: 200px;
 }
+
 #degree{
     margin-left: 30px !important;
     color: white;
@@ -26,24 +27,30 @@ input{
 #filtter{
     background: transparent !important;
 }
-#navbarNavDropdown{
-    gap: 20px !important;
-}
-#navlink{
-    width: 20% !important;
-}
-#navlink-1{
-    width: 20% !important;
-}
-#listitem{
-    width: 100% !important;
-    border: 1px solid #a0af11;
-}
-.card{
-    margin: 10px !important;
-}
 .card:hover{
-    box-shadow: 5px 5px #888888;
+    box-shadow:  10px 20px 20px rgb(177, 175, 175),    -10px -10px 20px  rgb(177, 175, 175),
+    10px -10px 20px rgb(177, 175, 175),
+    -10px 10px 20px  rgb(177, 175, 175);
+}
+#card-img{
+    height: 90px;
+    width: 100px;
+}
+#card-img1{
+    height: 90px;
+    width: 250px;
+}
+#card-img2{
+    height: 100px;
+    width: 120px;
+}
+#card-img3{
+    height: 100px;
+    width: 300px;
+}
+#card-img4{
+    height: 120px;
+    width: 300px;
 }
 .pagination{
     margin: 10px !important;
@@ -59,13 +66,65 @@ input{
     border-radius: 5px !important;
     margin-left: 5px !important;
 }
-.accordion-button{
-    background-color: transparent !important;
+#course-card{
+    height: 100px;
+    display: flex !important;
+    align-items: center !important;
+    background: rgb(244,244,247);
+    background: liner-gradient(225deg, rgba(244,244,247,1) 0%, rgba(219,229,234,1) 22%, rgba(228,232,234,1) 45%, rgba(236,236,244,1) 96%, rgba(241,241,244,1) 99%);
 }
-.aero{
-    border: 1px solid blue !important;
+#course-card1{
+    height: 100px;
+    display: flex !important;
+    align-items: center !important;
+    background: rgb(244,244,247);
+    background: liner-gradient(225deg, rgba(244,244,247,1) 0%, rgba(219,229,234,1) 22%, rgba(228,232,234,1) 45%, rgba(236,236,244,1) 96%, rgba(241,241,244,1) 99%);
 }
-.card{
-    height: 300px;
-    padding: 20px;
+#d-name{
+    margin-top: 20px !important;
+}
+#degree-card{
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center !important;
+    background: rgb(244,244,247);
+    background: liner-gradient(225deg, rgba(244,244,247,1) 0%, rgba(219,229,234,1) 22%, rgba(228,232,234,1) 45%, rgba(236,236,244,1) 96%, rgba(241,241,244,1) 99%);
+}
+#card-detail{
+    height: 240px;
+    width: 330px;
+}
+#card-image{
+    height: 250px;
+}
+.professors{
+    display: flex;
+}
+#faq{
+    display: flex;
+}
+i{
+    font-size: 1.5rem;
+    margin: 10px;
+}
+#question-s{
+    padding: 10px;
+}
+#accordionFlushExample{
+    padding: 10px;
+}
+@media(max-width:600px){
+    #faq{
+        display: flex;
+        flex-direction: column;
+    }   
+    #question-s{
+        margin-left: 20px;
+        width: 80% !important;
+    }
+    #accordionFlushExample{
+        margin-left: 20px;
+        width: 80% !important;
+    }
 }
