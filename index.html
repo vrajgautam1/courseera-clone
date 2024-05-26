@@ -53,93 +53,107 @@
     <!------------------------------------ 1st black navbar end -------------------------->
 
     <!----------------------------------- 2nd main navbar START ------------------------------->
-    <nav class="navbar navbar-expand-lg" aria-label="Offcanvas navbar large">
+    <nav class="navbar container navbar-expand-lg" aria-label="Offcanvas navbar large">
       <div class="container-fluid">
 
-          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar2"
-              aria-controls="offcanvasNavbar2" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-          </button>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar2"
+          aria-controls="offcanvasNavbar2" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-          <a class="navbar-brand" href="#" target="_blank"><img height="16px"
-                  src="./assets/images/header/courseralogo.svg"></a>
-          </a>
+        <a class="navbar-brand" href="#" target="_blank"><img height="16px"
+            src="./assets/images/header/courseralogo.svg"></a>
+        </a>
 
-          <div class="search-icon d-block d-lg-none ms-auto">
-              <i class="fas fa-search"></i>
+        <div class="search-icon d-block d-lg-none ms-auto">
+          <i class="fas fa-search"></i>
+        </div>
+
+
+        <div class="offcanvas offcanvas-end text-bg-dark d-lg-none" tabindex="-1" id="offcanvasNavbar2"
+          aria-labelledby="offcanvasNavbar2Label">
+
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbar2Label"><img height="16px"
+                src="./assets/images/header/courseralogo.svg"></h5>
+
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+              aria-label="Close"></button>
           </div>
+          <div class="offcanvas-body ">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  Dropdown
+                </a>
+              </li>
+            </ul>
 
-
-          <div class="offcanvas offcanvas-end text-bg-dark d-lg-none" tabindex="-1" id="offcanvasNavbar2"
-              aria-labelledby="offcanvasNavbar2Label">
-
-              <div class="offcanvas-header">
-                  <h5 class="offcanvas-title" id="offcanvasNavbar2Label"><img height="16px"
-                      src="./assets/images/header/courseralogo.svg"></h5>
-
-                  <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
-                      aria-label="Close"></button>
-              </div>
-              <div class="offcanvas-body ">
-                  <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                      <li class="nav-item">
-                          <a class="nav-link active" aria-current="page" href="#">Home</a>
-                      </li>
-                      <li class="nav-item">
-                          <a class="nav-link" href="#">Link</a>
-                      </li>
-                      <li class="nav-item dropdown">
-                          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                              aria-expanded="false">
-                              Dropdown
-                          </a>
-
-                      </li>
-                  </ul>
-                  <form class="d-flex mt-3 mt-lg-0" role="search">
-                      <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                      <button class="btn btn-outline-success" type="submit">Search</button>
-                  </form>
-              </div>
+            <form class="d-flex mt-3 mt-lg-0" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
           </div>
+        </div>
 
-          <div class="collapse navbar-collapse d-lg-block" id="navbarSupportedContent" >
-              <ul class="navbar-nav me-auto mb-2 mb-lg-0 d-flex justify-content-between w-100">
-                <li class="nav-item d-flex align-items-center">
-                  <button type="button"
-                    class="btn btn-outline-primary me-2 py-1 fw-semibold explorebtn rounded-1 d-flex align-items-center">Explore<i
-                      class="bi bi-chevron-down text-primary ms-2"></i>
-                  </button>
-    
-                  <form class="d-flex align-items-center search-bar" role="search">
-                    <div class="icon-circle">
-                      <i class="fa-solid fa-magnifying-glass"></i>
-                    </div>
-                    <input class="form-control ms-2 rounded-pill custom-placeholder large-search-box" type="search"
-                      placeholder="What do you want to learn?" aria-label="Search">
-                  </form>
-                </li>
-                <li class="nav-item d-flex align-items-center gap-3">
-                  <a class="nav-link d-flex align-items-center" aria-current="page" href="#">
-                    <i class="bi bi-globe fs-4"></i>
-                    <span class="ms-2">English</span>
-                    <i class="bi bi-chevron-down fs-5 ms-2"></i>
-                  </a>
-                  <a class="nav-link" href="#">
-                    <i class="bi bi-bell position-relative fs-4">
-                      <span
-                        class="position-absolute top-25 start-100 translate-middle p-2 bg-danger border border-light rounded-circle">
-                      </span>
-                    </i>
-                  </a>
-                  <div class="icon-circle1 rounded-circle">
-                    <span class="v-text text-light">V</span>
-                  </div>
-                </li>
-              </ul>
-            </div>
+        <div class="collapse navbar-collapse d-lg-block" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 d-flex justify-content-between w-100">
+            <li class="nav-item d-flex align-items-center">
+              <button data-track="true" data-track-app="unified_career_academy"
+                data-track-page="consumer_career_academy" data-track-action="click"
+                data-track-component="explore_button" data-e2e="megamenu-explore-button"
+                class="btn btn-light border border-1 border-primary px-4 explore-button" aria-expanded="false" aria-haspopup="true"
+                aria-label="Explore our catalog" type="button">
+                <span class="text-primary fw-bold fs-6">Explore</span>
+
+                <svg aria-hidden="true" fill="none" focusable="false" height="12" viewBox="0 0 16 16" width="12">
+                  <path fill-rule="evenodd" clip-rule="evenodd" class="text-primary"
+                    d="M8 11.293L1.354 4.646l-.708.708L8 12.707l7.354-7.353-.707-.708L8 11.293z" fill="currentColor">
+                  </path>
+                </svg>
+              </button>
+
+              <form class="d-flex align-items-center search-bar" role="search">
+                <div class="icon-circle">
+                  <i class="bi bi-search"></i>
+                </div>
+                <input class="form-control ms-2 rounded-pill custom-placeholder large-search-box" type="search"
+                  placeholder="What do you want to learn?" aria-label="Search">
+              </form>
+            </li>
+            <li class="nav-item d-flex align-items-center gap-3">
+              <a class="nav-link d-flex align-items-center" aria-current="page" href="#">
+                <i class="bi bi-globe fs-4"></i>
+                <span class="ms-2">English</span>
+                <i class="bi bi-chevron-down fs-5 ms-2"></i>
+              </a>
+              <a class="nav-link" href="#">
+                <i class="bi bi-bell position-relative fs-4">
+                  <span
+                    class="position-absolute top-25 start-100 translate-middle p-2 bg-danger border border-light rounded-circle">
+                  </span>
+                </i>
+              </a>
+              <div class="d-flex align-items-center">
+                <div class="avatar-initial bg-primary">V</div>
+                <svg class="dropdown-icon" fill="none" height="16" viewBox="0 0 16 16" width="16"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M8 11.293L1.354 4.646l-.708.708L8 12.707l7.354-7.353-.707-.708L8 11.293z" fill="currentColor" />
+                </svg>
+              </div>
+            </li>
+          </ul>
+        </div>
       </div>
-  </nav>
+    </nav>
     <!----------------------------------- 2nd main navbar END ------------------------------->
 
     <!-- 3rd navbar start -->
@@ -152,7 +166,8 @@
       </li>
 
       <li class="nav-item">
-        <a class="nav-link fw-semibold pg-indicatornav-links text-secondary-emphasis" href="./demo-2/my-learning.html">My Learning</a>
+        <a class="nav-link fw-semibold pg-indicatornav-links text-secondary-emphasis"
+          href="./demo-2/my-learning.html">My Learning</a>
       </li>
 
       <li class="nav-item">
@@ -160,11 +175,12 @@
       </li>
 
       <li class="nav-item">
-        <a class="nav-link fw-semibold pg-indicatornav-links text-secondary-emphasis" href="./demo/jainam.html">Find Your New Career</a>
+        <a class="nav-link fw-semibold pg-indicatornav-links text-secondary-emphasis" href="./demo/jainam.html">Find
+          Your New Career</a>
       </li>
 
     </ul>
-  
+
     <hr>
   </section>
   <!----------------------------------- navbar section end ------------------------------->
@@ -1734,7 +1750,7 @@
           </div>
 
         </div>
-        
+
         <!-- card-3 -->
         <div class="col-lg-3 col-md-6 col-12 mt-3 main-card1">
           <div class="card overflow-hidden border border-2">
@@ -1862,1851 +1878,1856 @@
   </section>
 
   <!-- featured courses -->
-<section class="container px-3">
-  <div class="row mb-2 container">
-    <div class="col-md-6">
-      <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
-        <div class="col p-4 d-flex flex-column position-static">
-          <strong class="d-inline-block mb-2 text-primary-emphasis">Northeastern University</strong>
-          <h3 class="mb-0 mt-2 featuredheading"> Earn an online master’s in data analytics</h3>
-          
-          <p class="card-text mb-auto mt-3"> Grow your tech leadership skills with a program under $24k</p>
-          
-          <button type="button" class="btn btn-outline-primary fw-semibold mt-4 featured-btn1 coursera-theme-color rounded-1">Learn more</button>
+  <section class="container px-3">
+    <div class="row mb-2 container">
+      <div class="col-md-6">
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+          <div class="col p-4 d-flex flex-column position-static">
+            <strong class="d-inline-block mb-2 text-primary-emphasis">Northeastern University</strong>
+            <h3 class="mb-0 mt-2 featuredheading"> Earn an online master’s in data analytics</h3>
+
+            <p class="card-text mb-auto mt-3"> Grow your tech leadership skills with a program under $24k</p>
+
+            <button type="button"
+              class="btn btn-outline-primary fw-semibold mt-4 featured-btn1 coursera-theme-color rounded-1">Learn
+              more</button>
+          </div>
+          <div class="col-auto d-none d-lg-block">
+            <img src="./assets/images/featured courses/northeastern uni.jpg" alt="Thumbnail" width="auto" height="100%">
+          </div>
         </div>
-        <div class="col-auto d-none d-lg-block">
-          <img src="./assets/images/featured courses/northeastern uni.jpg" alt="Thumbnail" width="auto" height="100%">
+      </div>
+
+
+      <div class="col-md-6">
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+          <div class="col p-4 d-flex flex-column position-static">
+            <strong class="d-inline-block mb-2 text-primary-emphasis">Northeastern University</strong>
+            <h3 class="mb-0 mt-2 featuredheading"> Earn an online master’s in data analytics</h3>
+
+            <p class="card-text mb-auto mt-3"> Grow your tech leadership skills with a program under $24k</p>
+
+            <button type="button"
+              class="btn btn-outline-primary fw-semibold mt-4 featured-btn1 coursera-theme-color rounded-1">Learn
+              more</button>
+          </div>
+          <div class="col-auto d-none d-lg-block">
+            <img src="./assets/images/featured courses/northeastern uni.jpg" alt="Thumbnail" width="auto" height="100%">
+          </div>
         </div>
       </div>
     </div>
+  </section>
 
 
-    <div class="col-md-6">
-      <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
-        <div class="col p-4 d-flex flex-column position-static">
-          <strong class="d-inline-block mb-2 text-primary-emphasis">Northeastern University</strong>
-          <h3 class="mb-0 mt-2 featuredheading"> Earn an online master’s in data analytics</h3>
-          
-          <p class="card-text mb-auto mt-3"> Grow your tech leadership skills with a program under $24k</p>
-          
-          <button type="button" class="btn btn-outline-primary fw-semibold mt-4 featured-btn1 coursera-theme-color rounded-1">Learn more</button>
+  <!-- Get Started with These Free Courses -->
+  <section class="container my-5">
+    <div class=" .source-sans-font-regular-text fs-14px-txt">
+      <h2 class="section-heading fw-normal">Get Started with These Free Courses</h2>
+
+      <div class="row align-item-end gx-4">
+        <!-- card-1 -->
+        <div class="col-lg-3 col-md-6 col-12 mt-3 main-card1">
+          <div class="card overflow-hidden border border-2">
+            <div class="overflow-hidden card-top-img-container rounded-2 pt-1 p-2 position-relative">
+              <img src="./assets/images/start-your-new-career/data-scientist-cover.jpg" class="card-img-top p-2 "
+                alt="...">
+              <span class="translate-middle badge rounded-pill bg-danger">
+                Free
+              </span>
+            </div>
+
+            <div class="card-body">
+
+              <div class="d-flex gap-2 align-items-center">
+                <div>
+                  <div class="little-logo-div1 rounded-2">
+                    <img src="./demo/card-section-images/unified-ca-override-ibm-logo-2.png" alt="twbs"
+                      class="little-logo-img">
+                  </div>
+                </div>
+                <div>
+                  <span class="gray-text">Google</span>
+                </div>
+              </div>
+
+              <h3 class="fs-16px-txt mt-2">Google data analytics</h3>
+
+
+              <div class="d-flex flex-column gap-2 mt-3">
+                <div class="d-flex gap-1 coursera-theme-color">
+                  <i class="bi bi-file-earmark coursera-theme-color"></i>
+                  <div>
+                    <a href="" class="text-decoration-none coursera-theme-color">Make progress toward a
+                      degree</a>
+                  </div>
+                </div>
+
+                <div class="d-flex flex-column gap-2">
+                  <div class="d-flex gap-1 coursera-theme-color reviewsline">
+                    <img src="./assets/images/recently-viewed-products/star.svg" height="16" width="16" alt="">
+                    <p><span class="fw-semibold">4.8</span><span class="gray-text"> (145k reviews)</span></p>
+                  </div>
+                  <p class="gray-text card-category">Professional Certificate</p>
+                </div>
+
+                <div class="d-flex gap-3">
+                  <div>
+                    <i class="bi bi-hand-thumbs-up"></i>
+
+                  </div>
+                  <div class="thumbs-down">
+                    <i class="bi bi-hand-thumbs-down"></i>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
         </div>
-        <div class="col-auto d-none d-lg-block">
-          <img src="./assets/images/featured courses/northeastern uni.jpg" alt="Thumbnail" width="auto" height="100%">
+
+        <!-- card-2 -->
+        <div class="col-lg-3 col-md-6 col-12 mt-3 main-card1">
+          <div class="card overflow-hidden border border-2">
+            <div class="overflow-hidden card-top-img-container rounded-2 pt-1 p-2">
+              <img src="./assets/images/start-your-new-career/data-scientist-cover.jpg" class="card-img-top p-2"
+                alt="...">
+              <span class="translate-middle badge rounded-pill bg-danger">
+                Free
+              </span>
+            </div>
+
+            <div class="card-body">
+
+              <div class="d-flex gap-2 align-items-center">
+                <div>
+                  <div class="little-logo-div1 rounded-2">
+                    <img src="./demo/card-section-images/unified-ca-override-ibm-logo-2.png" alt="twbs"
+                      class="little-logo-img">
+                  </div>
+                </div>
+                <div>
+                  <span class="gray-text">Google</span>
+                </div>
+              </div>
+
+              <h3 class="fs-16px-txt mt-2">Google data analytics</h3>
+
+
+              <div class="d-flex flex-column gap-2 mt-3">
+                <div class="d-flex gap-1 coursera-theme-color">
+                  <i class="bi bi-file-earmark coursera-theme-color"></i>
+                  <div>
+                    <a href="" class="text-decoration-none coursera-theme-color">Make progress toward a
+                      degree</a>
+                  </div>
+                </div>
+
+                <div class="d-flex flex-column gap-2">
+                  <div class="d-flex gap-1 coursera-theme-color reviewsline">
+                    <img src="./assets/images/recently-viewed-products/star.svg" height="16" width="16" alt="">
+                    <p><span class="fw-semibold">4.8</span><span class="gray-text"> (145k reviews)</span></p>
+                  </div>
+                  <p class="gray-text card-category">Professional Certificate</p>
+                </div>
+
+                <div class="d-flex gap-3">
+                  <div>
+                    <i class="bi bi-hand-thumbs-up"></i>
+
+                  </div>
+                  <div class="thumbs-down">
+                    <i class="bi bi-hand-thumbs-down"></i>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
         </div>
+
+        <!-- card-3 -->
+        <div class="col-lg-3 col-md-6 col-12 mt-3 main-card1">
+          <div class="card overflow-hidden border border-2">
+            <div class="overflow-hidden card-top-img-container rounded-2 pt-1 p-2">
+              <img src="./assets/images/start-your-new-career/data-scientist-cover.jpg" class="card-img-top p-2"
+                alt="...">
+              <span class="translate-middle badge rounded-pill bg-danger">
+                Free
+              </span>
+            </div>
+
+            <div class="card-body">
+
+              <div class="d-flex gap-2 align-items-center">
+                <div>
+                  <div class="little-logo-div1 rounded-2">
+                    <img src="./demo/card-section-images/unified-ca-override-ibm-logo-2.png" alt="twbs"
+                      class="little-logo-img">
+                  </div>
+                </div>
+                <div>
+                  <span class="gray-text">Google</span>
+                </div>
+              </div>
+
+              <h3 class="fs-16px-txt mt-2">Google data analytics</h3>
+
+
+              <div class="d-flex flex-column gap-2 mt-3">
+                <div class="d-flex gap-1 coursera-theme-color">
+                  <i class="bi bi-file-earmark coursera-theme-color"></i>
+                  <div>
+                    <a href="" class="text-decoration-none coursera-theme-color">Make progress toward a
+                      degree</a>
+                  </div>
+                </div>
+
+                <div class="d-flex flex-column gap-2">
+                  <div class="d-flex gap-1 coursera-theme-color reviewsline">
+                    <img src="./assets/images/recently-viewed-products/star.svg" height="16" width="16" alt="">
+                    <p><span class="fw-semibold">4.8</span><span class="gray-text"> (145k reviews)</span></p>
+                  </div>
+                  <p class="gray-text card-category">Professional Certificate</p>
+                </div>
+
+                <div class="d-flex gap-3">
+                  <div>
+                    <i class="bi bi-hand-thumbs-up"></i>
+
+                  </div>
+                  <div class="thumbs-down">
+                    <i class="bi bi-hand-thumbs-down"></i>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- card-4 -->
+        <div class="col-lg-3 col-md-6 col-12 mt-3 main-card1">
+          <div class="card overflow-hidden border border-2">
+            <div class="overflow-hidden card-top-img-container rounded-2 pt-1 p-2">
+              <img src="./assets/images/start-your-new-career/data-scientist-cover.jpg" class="card-img-top p-2"
+                alt="...">
+              <span class="translate-middle badge rounded-pill bg-danger">
+                Free
+              </span>
+            </div>
+
+            <div class="card-body">
+
+              <div class="d-flex gap-2 align-items-center">
+                <div>
+                  <div class="little-logo-div1 rounded-2">
+                    <img src="./demo/card-section-images/unified-ca-override-ibm-logo-2.png" alt="twbs"
+                      class="little-logo-img">
+                  </div>
+                </div>
+                <div>
+                  <span class="gray-text">Google</span>
+                </div>
+              </div>
+
+              <h3 class="fs-16px-txt mt-2">Google data analytics</h3>
+
+
+              <div class="d-flex flex-column gap-2 mt-3">
+                <div class="d-flex gap-1 coursera-theme-color">
+                  <i class="bi bi-file-earmark coursera-theme-color"></i>
+                  <div>
+                    <a href="" class="text-decoration-none coursera-theme-color">Make progress toward a
+                      degree</a>
+                  </div>
+                </div>
+
+                <div class="d-flex flex-column gap-2">
+                  <div class="d-flex gap-1 coursera-theme-color reviewsline">
+                    <img src="./assets/images/recently-viewed-products/star.svg" height="16" width="16" alt="">
+                    <p><span class="fw-semibold">4.8</span><span class="gray-text"> (145k reviews)</span></p>
+                  </div>
+                  <p class="gray-text card-category">Professional Certificate</p>
+                </div>
+
+                <div class="d-flex gap-3">
+                  <div>
+                    <i class="bi bi-hand-thumbs-up"></i>
+
+                  </div>
+                  <div class="thumbs-down">
+                    <i class="bi bi-hand-thumbs-down"></i>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+
       </div>
-    </div>
-  </div>
-</section>
+      <div class="mt-3">
+        <button type="button" class="btn btn-outline-primary border-1 fw-semibold coursera-theme-color">Show 8
+          more</button>
+      </div>
+  </section>
+
+  <!-- categories -->
+  <section class="container my-5">
+    <div class=" .source-sans-font-regular-text fs-14px-txt">
+      <h2 class="section-heading fw-normal">Categories</h2>
 
 
-<!-- Get Started with These Free Courses -->
-<section class="container my-5">
-  <div class=" .source-sans-font-regular-text fs-14px-txt">
-    <h2 class="section-heading fw-normal">Get Started with These Free Courses</h2>
-
-    <div class="row align-item-end gx-4">
       <!-- card-1 -->
-      <div class="col-lg-3 col-md-6 col-12 mt-3 main-card1">
-        <div class="card overflow-hidden border border-2">
-          <div class="overflow-hidden card-top-img-container rounded-2 pt-1 p-2 position-relative">
-            <img src="./assets/images/start-your-new-career/data-scientist-cover.jpg" class="card-img-top p-2 "
-              alt="...">
-              <span class="translate-middle badge rounded-pill bg-danger">
-                Free
-              </span>
-          </div>
-
-          <div class="card-body">
-
-            <div class="d-flex gap-2 align-items-center">
-              <div>
-                <div class="little-logo-div1 rounded-2">
-                  <img src="./demo/card-section-images/unified-ca-override-ibm-logo-2.png" alt="twbs"
-                    class="little-logo-img">
-                </div>
-              </div>
-              <div>
-                <span class="gray-text">Google</span>
-              </div>
-            </div>
-
-            <h3 class="fs-16px-txt mt-2">Google data analytics</h3>
 
 
-            <div class="d-flex flex-column gap-2 mt-3">
-              <div class="d-flex gap-1 coursera-theme-color">
-                <i class="bi bi-file-earmark coursera-theme-color"></i>
-                <div>
-                  <a href="" class="text-decoration-none coursera-theme-color">Make progress toward a
-                    degree</a>
-                </div>
-              </div>
-
-              <div class="d-flex flex-column gap-2">
-                <div class="d-flex gap-1 coursera-theme-color reviewsline">
-                  <img src="./assets/images/recently-viewed-products/star.svg" height="16" width="16" alt="">
-                  <p><span class="fw-semibold">4.8</span><span class="gray-text"> (145k reviews)</span></p>
-                </div>
-                <p class="gray-text card-category">Professional Certificate</p>
-              </div>
-
-              <div class="d-flex gap-3">
-                <div>
-                  <i class="bi bi-hand-thumbs-up"></i>
-
-                </div>
-                <div class="thumbs-down">
-                  <i class="bi bi-hand-thumbs-down"></i>
-
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-      </div>
-
-      <!-- card-2 -->
-      <div class="col-lg-3 col-md-6 col-12 mt-3 main-card1">
-        <div class="card overflow-hidden border border-2">
-          <div class="overflow-hidden card-top-img-container rounded-2 pt-1 p-2">
-            <img src="./assets/images/start-your-new-career/data-scientist-cover.jpg" class="card-img-top p-2"
-              alt="...">
-              <span class="translate-middle badge rounded-pill bg-danger">
-                Free
-              </span>
-          </div>
-
-          <div class="card-body">
-
-            <div class="d-flex gap-2 align-items-center">
-              <div>
-                <div class="little-logo-div1 rounded-2">
-                  <img src="./demo/card-section-images/unified-ca-override-ibm-logo-2.png" alt="twbs"
-                    class="little-logo-img">
-                </div>
-              </div>
-              <div>
-                <span class="gray-text">Google</span>
-              </div>
-            </div>
-
-            <h3 class="fs-16px-txt mt-2">Google data analytics</h3>
 
 
-            <div class="d-flex flex-column gap-2 mt-3">
-              <div class="d-flex gap-1 coursera-theme-color">
-                <i class="bi bi-file-earmark coursera-theme-color"></i>
-                <div>
-                  <a href="" class="text-decoration-none coursera-theme-color">Make progress toward a
-                    degree</a>
-                </div>
-              </div>
-
-              <div class="d-flex flex-column gap-2">
-                <div class="d-flex gap-1 coursera-theme-color reviewsline">
-                  <img src="./assets/images/recently-viewed-products/star.svg" height="16" width="16" alt="">
-                  <p><span class="fw-semibold">4.8</span><span class="gray-text"> (145k reviews)</span></p>
-                </div>
-                <p class="gray-text card-category">Professional Certificate</p>
-              </div>
-
-              <div class="d-flex gap-3">
-                <div>
-                  <i class="bi bi-hand-thumbs-up"></i>
-
-                </div>
-                <div class="thumbs-down">
-                  <i class="bi bi-hand-thumbs-down"></i>
-
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-      </div>
-
-      <!-- card-3 -->
-      <div class="col-lg-3 col-md-6 col-12 mt-3 main-card1">
-        <div class="card overflow-hidden border border-2">
-          <div class="overflow-hidden card-top-img-container rounded-2 pt-1 p-2">
-            <img src="./assets/images/start-your-new-career/data-scientist-cover.jpg" class="card-img-top p-2"
-              alt="...">
-              <span class="translate-middle badge rounded-pill bg-danger">
-                Free
-              </span>
-          </div>
-
-          <div class="card-body">
-
-            <div class="d-flex gap-2 align-items-center">
-              <div>
-                <div class="little-logo-div1 rounded-2">
-                  <img src="./demo/card-section-images/unified-ca-override-ibm-logo-2.png" alt="twbs"
-                    class="little-logo-img">
-                </div>
-              </div>
-              <div>
-                <span class="gray-text">Google</span>
-              </div>
-            </div>
-
-            <h3 class="fs-16px-txt mt-2">Google data analytics</h3>
-
-
-            <div class="d-flex flex-column gap-2 mt-3">
-              <div class="d-flex gap-1 coursera-theme-color">
-                <i class="bi bi-file-earmark coursera-theme-color"></i>
-                <div>
-                  <a href="" class="text-decoration-none coursera-theme-color">Make progress toward a
-                    degree</a>
-                </div>
-              </div>
-
-              <div class="d-flex flex-column gap-2">
-                <div class="d-flex gap-1 coursera-theme-color reviewsline">
-                  <img src="./assets/images/recently-viewed-products/star.svg" height="16" width="16" alt="">
-                  <p><span class="fw-semibold">4.8</span><span class="gray-text"> (145k reviews)</span></p>
-                </div>
-                <p class="gray-text card-category">Professional Certificate</p>
-              </div>
-
-              <div class="d-flex gap-3">
-                <div>
-                  <i class="bi bi-hand-thumbs-up"></i>
-
-                </div>
-                <div class="thumbs-down">
-                  <i class="bi bi-hand-thumbs-down"></i>
-
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-      </div>
-
-      <!-- card-4 -->
-      <div class="col-lg-3 col-md-6 col-12 mt-3 main-card1">
-        <div class="card overflow-hidden border border-2">
-          <div class="overflow-hidden card-top-img-container rounded-2 pt-1 p-2">
-            <img src="./assets/images/start-your-new-career/data-scientist-cover.jpg" class="card-img-top p-2"
-              alt="...">
-              <span class="translate-middle badge rounded-pill bg-danger">
-                Free
-              </span>
-          </div>
-
-          <div class="card-body">
-
-            <div class="d-flex gap-2 align-items-center">
-              <div>
-                <div class="little-logo-div1 rounded-2">
-                  <img src="./demo/card-section-images/unified-ca-override-ibm-logo-2.png" alt="twbs"
-                    class="little-logo-img">
-                </div>
-              </div>
-              <div>
-                <span class="gray-text">Google</span>
-              </div>
-            </div>
-
-            <h3 class="fs-16px-txt mt-2">Google data analytics</h3>
-
-
-            <div class="d-flex flex-column gap-2 mt-3">
-              <div class="d-flex gap-1 coursera-theme-color">
-                <i class="bi bi-file-earmark coursera-theme-color"></i>
-                <div>
-                  <a href="" class="text-decoration-none coursera-theme-color">Make progress toward a
-                    degree</a>
-                </div>
-              </div>
-
-              <div class="d-flex flex-column gap-2">
-                <div class="d-flex gap-1 coursera-theme-color reviewsline">
-                  <img src="./assets/images/recently-viewed-products/star.svg" height="16" width="16" alt="">
-                  <p><span class="fw-semibold">4.8</span><span class="gray-text"> (145k reviews)</span></p>
-                </div>
-                <p class="gray-text card-category">Professional Certificate</p>
-              </div>
-
-              <div class="d-flex gap-3">
-                <div>
-                  <i class="bi bi-hand-thumbs-up"></i>
-
-                </div>
-                <div class="thumbs-down">
-                  <i class="bi bi-hand-thumbs-down"></i>
-
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-      </div>
-
-
-    </div>
-    <div class="mt-3">
-      <button type="button" class="btn btn-outline-primary border-1 fw-semibold coursera-theme-color">Show 8
-        more</button>
-    </div>
-</section>
-
-<!-- categories -->
-<section class="container my-5">
-  <div class=" .source-sans-font-regular-text fs-14px-txt">
-    <h2 class="section-heading fw-normal">Categories</h2>
-
-    
-      <!-- card-1 -->
-      
-
-      
-      
 
       <div class="mt-3">
         <div class="row gx-3">
-        
-          <div class="col-12 col-lg-6 my-2">
-           <div class="p-4 fs-16px-txt fw-semibold rounded-3 p-3 text-light dark-bg">Custom column padding</div>
-          </div>
 
           <div class="col-12 col-lg-6 my-2">
             <div class="p-4 fs-16px-txt fw-semibold rounded-3 p-3 text-light dark-bg">Custom column padding</div>
-           </div>
+          </div>
 
-           <div class="col-12 col-lg-6 my-2">
+          <div class="col-12 col-lg-6 my-2">
             <div class="p-4 fs-16px-txt fw-semibold rounded-3 p-3 text-light dark-bg">Custom column padding</div>
-           </div>
+          </div>
 
-           <div class="col-12 col-lg-6 my-2">
+          <div class="col-12 col-lg-6 my-2">
             <div class="p-4 fs-16px-txt fw-semibold rounded-3 p-3 text-light dark-bg">Custom column padding</div>
-           </div>
+          </div>
 
-           <div class="col-12 col-lg-6 my-2">
+          <div class="col-12 col-lg-6 my-2">
             <div class="p-4 fs-16px-txt fw-semibold rounded-3 p-3 text-light dark-bg">Custom column padding</div>
-           </div>
+          </div>
 
-           <div class="col-12 col-lg-6 my-2">
+          <div class="col-12 col-lg-6 my-2">
             <div class="p-4 fs-16px-txt fw-semibold rounded-3 p-3 text-light dark-bg">Custom column padding</div>
-           </div>
+          </div>
 
-           <div class="col-12 col-lg-6 my-2">
+          <div class="col-12 col-lg-6 my-2">
             <div class="p-4 fs-16px-txt fw-semibold rounded-3 p-3 text-light dark-bg">Custom column padding</div>
-           </div>
+          </div>
 
-           <div class="col-12 col-lg-6 my-2">
+          <div class="col-12 col-lg-6 my-2">
             <div class="p-4 fs-16px-txt fw-semibold rounded-3 p-3 text-light dark-bg">Custom column padding</div>
-           </div>
+          </div>
 
-           <div class="col-12 col-lg-6 my-2">
+          <div class="col-12 col-lg-6 my-2">
             <div class="p-4 fs-16px-txt fw-semibold rounded-3 p-3 text-light dark-bg">Custom column padding</div>
-           </div>
+          </div>
+
+          <div class="col-12 col-lg-6 my-2">
+            <div class="p-4 fs-16px-txt fw-semibold rounded-3 p-3 text-light dark-bg">Custom column padding</div>
+          </div>
 
         </div>
       </div>
 
 
-</section>
+  </section>
 
-<!-- new of coursera -->
-<section class="container my-5">
-  <div class=" .source-sans-font-regular-text fs-14px-txt">
-    <h2 class="section-heading fw-normal">New on coursera</h2>
+  <!-- new of coursera -->
+  <section class="container my-5">
+    <div class=" .source-sans-font-regular-text fs-14px-txt">
+      <h2 class="section-heading fw-normal">New on coursera</h2>
 
-    <div class="row align-item-end gx-4">
-      <!-- card-1 -->
-      <div class="col-lg-3 col-md-6 col-12 mt-3 main-card1">
-        <div class="card overflow-hidden border border-2">
-          <div class="overflow-hidden card-top-img-container rounded-2 pt-1 p-2">
-            <img src="./assets/images/start-your-new-career/data-scientist-cover.jpg" class="card-img-top p-2"
-              alt="...">
-          </div>
-
-          <div class="card-body">
-
-            <div class="d-flex gap-2 align-items-center">
-              <div>
-                <div class="little-logo-div1 rounded-2">
-                  <img src="./demo/card-section-images/unified-ca-override-ibm-logo-2.png" alt="twbs"
-                    class="little-logo-img">
-                </div>
-              </div>
-              <div>
-                <span class="gray-text">Google</span>
-              </div>
+      <div class="row align-item-end gx-4">
+        <!-- card-1 -->
+        <div class="col-lg-3 col-md-6 col-12 mt-3 main-card1">
+          <div class="card overflow-hidden border border-2">
+            <div class="overflow-hidden card-top-img-container rounded-2 pt-1 p-2">
+              <img src="./assets/images/start-your-new-career/data-scientist-cover.jpg" class="card-img-top p-2"
+                alt="...">
             </div>
 
-            <h3 class="fs-16px-txt mt-2">Google data analytics</h3>
+            <div class="card-body">
 
-
-            <div class="d-flex flex-column gap-2 mt-3">
-              <div class="d-flex gap-1 coursera-theme-color">
-                <i class="bi bi-file-earmark coursera-theme-color"></i>
+              <div class="d-flex gap-2 align-items-center">
                 <div>
-                  <a href="" class="text-decoration-none coursera-theme-color">Make progress toward a
-                    degree</a>
+                  <div class="little-logo-div1 rounded-2">
+                    <img src="./demo/card-section-images/unified-ca-override-ibm-logo-2.png" alt="twbs"
+                      class="little-logo-img">
+                  </div>
+                </div>
+                <div>
+                  <span class="gray-text">Google</span>
                 </div>
               </div>
 
-              <div class="d-flex flex-column gap-2">
-                <div class="d-flex gap-1 coursera-theme-color reviewsline">
-                  <img src="./assets/images/recently-viewed-products/star.svg" height="16" width="16" alt="">
-                  <p><span class="fw-semibold">4.8</span><span class="gray-text"> (145k reviews)</span></p>
+              <h3 class="fs-16px-txt mt-2">Google data analytics</h3>
+
+
+              <div class="d-flex flex-column gap-2 mt-3">
+                <div class="d-flex gap-1 coursera-theme-color">
+                  <i class="bi bi-file-earmark coursera-theme-color"></i>
+                  <div>
+                    <a href="" class="text-decoration-none coursera-theme-color">Make progress toward a
+                      degree</a>
+                  </div>
                 </div>
-                <p class="gray-text card-category">Professional Certificate</p>
-              </div>
 
-              <div class="d-flex gap-3">
-                <div>
-                  <i class="bi bi-hand-thumbs-up"></i>
-
+                <div class="d-flex flex-column gap-2">
+                  <div class="d-flex gap-1 coursera-theme-color reviewsline">
+                    <img src="./assets/images/recently-viewed-products/star.svg" height="16" width="16" alt="">
+                    <p><span class="fw-semibold">4.8</span><span class="gray-text"> (145k reviews)</span></p>
+                  </div>
+                  <p class="gray-text card-category">Professional Certificate</p>
                 </div>
-                <div class="thumbs-down">
-                  <i class="bi bi-hand-thumbs-down"></i>
 
+                <div class="d-flex gap-3">
+                  <div>
+                    <i class="bi bi-hand-thumbs-up"></i>
+
+                  </div>
+                  <div class="thumbs-down">
+                    <i class="bi bi-hand-thumbs-down"></i>
+
+                  </div>
                 </div>
               </div>
             </div>
           </div>
+
+        </div>
+
+        <!-- card-2 -->
+        <div class="col-lg-3 col-md-6 col-12 mt-3 main-card1">
+          <div class="card overflow-hidden border border-2">
+            <div class="overflow-hidden card-top-img-container rounded-2 pt-1 p-2">
+              <img src="./assets/images/start-your-new-career/data-scientist-cover.jpg" class="card-img-top p-2"
+                alt="...">
+            </div>
+
+            <div class="card-body">
+
+              <div class="d-flex gap-2 align-items-center">
+                <div>
+                  <div class="little-logo-div1 rounded-2">
+                    <img src="./demo/card-section-images/unified-ca-override-ibm-logo-2.png" alt="twbs"
+                      class="little-logo-img">
+                  </div>
+                </div>
+                <div>
+                  <span class="gray-text">Google</span>
+                </div>
+              </div>
+
+              <h3 class="fs-16px-txt mt-2">Google data analytics</h3>
+
+
+              <div class="d-flex flex-column gap-2 mt-3">
+                <div class="d-flex gap-1 coursera-theme-color">
+                  <i class="bi bi-file-earmark coursera-theme-color"></i>
+                  <div>
+                    <a href="" class="text-decoration-none coursera-theme-color">Make progress toward a
+                      degree</a>
+                  </div>
+                </div>
+
+                <div class="d-flex flex-column gap-2">
+                  <div class="d-flex gap-1 coursera-theme-color reviewsline">
+                    <img src="./assets/images/recently-viewed-products/star.svg" height="16" width="16" alt="">
+                    <p><span class="fw-semibold">4.8</span><span class="gray-text"> (145k reviews)</span></p>
+                  </div>
+                  <p class="gray-text card-category">Professional Certificate</p>
+                </div>
+
+                <div class="d-flex gap-3">
+                  <div>
+                    <i class="bi bi-hand-thumbs-up"></i>
+
+                  </div>
+                  <div class="thumbs-down">
+                    <i class="bi bi-hand-thumbs-down"></i>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- card-3 -->
+        <div class="col-lg-3 col-md-6 col-12 mt-3 main-card1">
+          <div class="card overflow-hidden border border-2">
+            <div class="overflow-hidden card-top-img-container rounded-2 pt-1 p-2">
+              <img src="./assets/images/start-your-new-career/data-scientist-cover.jpg" class="card-img-top p-2"
+                alt="...">
+            </div>
+
+            <div class="card-body">
+
+              <div class="d-flex gap-2 align-items-center">
+                <div>
+                  <div class="little-logo-div1 rounded-2">
+                    <img src="./demo/card-section-images/unified-ca-override-ibm-logo-2.png" alt="twbs"
+                      class="little-logo-img">
+                  </div>
+                </div>
+                <div>
+                  <span class="gray-text">Google</span>
+                </div>
+              </div>
+
+              <h3 class="fs-16px-txt mt-2">Google data analytics</h3>
+
+
+              <div class="d-flex flex-column gap-2 mt-3">
+                <div class="d-flex gap-1 coursera-theme-color">
+                  <i class="bi bi-file-earmark coursera-theme-color"></i>
+                  <div>
+                    <a href="" class="text-decoration-none coursera-theme-color">Make progress toward a
+                      degree</a>
+                  </div>
+                </div>
+
+                <div class="d-flex flex-column gap-2">
+                  <div class="d-flex gap-1 coursera-theme-color reviewsline">
+                    <img src="./assets/images/recently-viewed-products/star.svg" height="16" width="16" alt="">
+                    <p><span class="fw-semibold">4.8</span><span class="gray-text"> (145k reviews)</span></p>
+                  </div>
+                  <p class="gray-text card-category">Professional Certificate</p>
+                </div>
+
+                <div class="d-flex gap-3">
+                  <div>
+                    <i class="bi bi-hand-thumbs-up"></i>
+
+                  </div>
+                  <div class="thumbs-down">
+                    <i class="bi bi-hand-thumbs-down"></i>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- card-4 -->
+        <div class="col-lg-3 col-md-6 col-12 mt-3 main-card1">
+          <div class="card overflow-hidden border border-2">
+            <div class="overflow-hidden card-top-img-container rounded-2 pt-1 p-2">
+              <img src="./assets/images/start-your-new-career/data-scientist-cover.jpg" class="card-img-top p-2"
+                alt="...">
+            </div>
+
+            <div class="card-body">
+
+              <div class="d-flex gap-2 align-items-center">
+                <div>
+                  <div class="little-logo-div1 rounded-2">
+                    <img src="./demo/card-section-images/unified-ca-override-ibm-logo-2.png" alt="twbs"
+                      class="little-logo-img">
+                  </div>
+                </div>
+                <div>
+                  <span class="gray-text">Google</span>
+                </div>
+              </div>
+
+              <h3 class="fs-16px-txt mt-2">Google data analytics</h3>
+
+
+              <div class="d-flex flex-column gap-2 mt-3">
+                <div class="d-flex gap-1 coursera-theme-color">
+                  <i class="bi bi-file-earmark coursera-theme-color"></i>
+                  <div>
+                    <a href="" class="text-decoration-none coursera-theme-color">Make progress toward a
+                      degree</a>
+                  </div>
+                </div>
+
+                <div class="d-flex flex-column gap-2">
+                  <div class="d-flex gap-1 coursera-theme-color reviewsline">
+                    <img src="./assets/images/recently-viewed-products/star.svg" height="16" width="16" alt="">
+                    <p><span class="fw-semibold">4.8</span><span class="gray-text"> (145k reviews)</span></p>
+                  </div>
+                  <p class="gray-text card-category">Professional Certificate</p>
+                </div>
+
+                <div class="d-flex gap-3">
+                  <div>
+                    <i class="bi bi-hand-thumbs-up"></i>
+
+                  </div>
+                  <div class="thumbs-down">
+                    <i class="bi bi-hand-thumbs-down"></i>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+
+      </div>
+      <div class="mt-3">
+        <button type="button" class="btn btn-outline-primary border-1 fw-semibold coursera-theme-color">Show 8
+          more</button>
+      </div>
+  </section>
+
+  <!-- popular in data science -->
+  <section class="container my-5">
+    <div class=".source-sans-font-regular-text fs-14px-txt">
+      <h2 class="section-heading fw-normal">Popular in data science</h2>
+
+      <div class="row align-item-end gx-4">
+        <!-- card-1 -->
+        <div class="col-lg-3 col-md-6 col-12 mt-3 main-card1">
+          <div class="card overflow-hidden border border-2">
+            <div class="overflow-hidden card-top-img-container rounded-2 pt-1 p-2">
+              <img src="./assets/images/start-your-new-career/data-scientist-cover.jpg" class="card-img-top p-2"
+                alt="...">
+            </div>
+
+            <div class="card-body">
+
+              <div class="d-flex gap-2 align-items-center">
+                <div>
+                  <div class="little-logo-div1 rounded-2">
+                    <img src="./demo/card-section-images/unified-ca-override-ibm-logo-2.png" alt="twbs"
+                      class="little-logo-img">
+                  </div>
+                </div>
+                <div>
+                  <span class="gray-text">Google</span>
+                </div>
+              </div>
+
+              <h3 class="fs-16px-txt mt-2">Google data analytics</h3>
+
+
+              <div class="d-flex flex-column gap-2 mt-3">
+                <div class="d-flex gap-1 coursera-theme-color">
+                  <i class="bi bi-file-earmark coursera-theme-color"></i>
+                  <div>
+                    <a href="" class="text-decoration-none coursera-theme-color">Make progress toward a
+                      degree</a>
+                  </div>
+                </div>
+
+                <div class="d-flex flex-column gap-2">
+                  <div class="d-flex gap-1 coursera-theme-color reviewsline">
+                    <img src="./assets/images/recently-viewed-products/star.svg" height="16" width="16" alt="">
+                    <p><span class="fw-semibold">4.8</span><span class="gray-text"> (145k reviews)</span></p>
+                  </div>
+                  <p class="gray-text card-category">Professional Certificate</p>
+                </div>
+
+                <div class="d-flex gap-3">
+                  <div>
+                    <i class="bi bi-hand-thumbs-up"></i>
+
+                  </div>
+                  <div class="thumbs-down">
+                    <i class="bi bi-hand-thumbs-down"></i>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- card-2 -->
+        <div class="col-lg-3 col-md-6 col-12 mt-3 main-card1">
+          <div class="card overflow-hidden border border-2">
+            <div class="overflow-hidden card-top-img-container rounded-2 pt-1 p-2">
+              <img src="./assets/images/start-your-new-career/data-scientist-cover.jpg" class="card-img-top p-2"
+                alt="...">
+            </div>
+
+            <div class="card-body">
+
+              <div class="d-flex gap-2 align-items-center">
+                <div>
+                  <div class="little-logo-div1 rounded-2">
+                    <img src="./demo/card-section-images/unified-ca-override-ibm-logo-2.png" alt="twbs"
+                      class="little-logo-img">
+                  </div>
+                </div>
+                <div>
+                  <span class="gray-text">Google</span>
+                </div>
+              </div>
+
+              <h3 class="fs-16px-txt mt-2">Google data analytics</h3>
+
+
+              <div class="d-flex flex-column gap-2 mt-3">
+                <div class="d-flex gap-1 coursera-theme-color">
+                  <i class="bi bi-file-earmark coursera-theme-color"></i>
+                  <div>
+                    <a href="" class="text-decoration-none coursera-theme-color">Make progress toward a
+                      degree</a>
+                  </div>
+                </div>
+
+                <div class="d-flex flex-column gap-2">
+                  <div class="d-flex gap-1 coursera-theme-color reviewsline">
+                    <img src="./assets/images/recently-viewed-products/star.svg" height="16" width="16" alt="">
+                    <p><span class="fw-semibold">4.8</span><span class="gray-text"> (145k reviews)</span></p>
+                  </div>
+                  <p class="gray-text card-category">Professional Certificate</p>
+                </div>
+
+                <div class="d-flex gap-3">
+                  <div>
+                    <i class="bi bi-hand-thumbs-up"></i>
+
+                  </div>
+                  <div class="thumbs-down">
+                    <i class="bi bi-hand-thumbs-down"></i>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- card-3 -->
+        <div class="col-lg-3 col-md-6 col-12 mt-3 main-card1">
+          <div class="card overflow-hidden border border-2">
+            <div class="overflow-hidden card-top-img-container rounded-2 pt-1 p-2">
+              <img src="./assets/images/start-your-new-career/data-scientist-cover.jpg" class="card-img-top p-2"
+                alt="...">
+            </div>
+
+            <div class="card-body">
+
+              <div class="d-flex gap-2 align-items-center">
+                <div>
+                  <div class="little-logo-div1 rounded-2">
+                    <img src="./demo/card-section-images/unified-ca-override-ibm-logo-2.png" alt="twbs"
+                      class="little-logo-img">
+                  </div>
+                </div>
+                <div>
+                  <span class="gray-text">Google</span>
+                </div>
+              </div>
+
+              <h3 class="fs-16px-txt mt-2">Google data analytics</h3>
+
+
+              <div class="d-flex flex-column gap-2 mt-3">
+                <div class="d-flex gap-1 coursera-theme-color">
+                  <i class="bi bi-file-earmark coursera-theme-color"></i>
+                  <div>
+                    <a href="" class="text-decoration-none coursera-theme-color">Make progress toward a
+                      degree</a>
+                  </div>
+                </div>
+
+                <div class="d-flex flex-column gap-2">
+                  <div class="d-flex gap-1 coursera-theme-color reviewsline">
+                    <img src="./assets/images/recently-viewed-products/star.svg" height="16" width="16" alt="">
+                    <p><span class="fw-semibold">4.8</span><span class="gray-text"> (145k reviews)</span></p>
+                  </div>
+                  <p class="gray-text card-category">Professional Certificate</p>
+                </div>
+
+                <div class="d-flex gap-3">
+                  <div>
+                    <i class="bi bi-hand-thumbs-up"></i>
+
+                  </div>
+                  <div class="thumbs-down">
+                    <i class="bi bi-hand-thumbs-down"></i>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- card-4 -->
+        <div class="col-lg-3 col-md-6 col-12 mt-3 main-card1">
+          <div class="card overflow-hidden border border-2">
+            <div class="overflow-hidden card-top-img-container rounded-2 pt-1 p-2">
+              <img src="./assets/images/start-your-new-career/data-scientist-cover.jpg" class="card-img-top p-2"
+                alt="...">
+            </div>
+
+            <div class="card-body">
+
+              <div class="d-flex gap-2 align-items-center">
+                <div>
+                  <div class="little-logo-div1 rounded-2">
+                    <img src="./demo/card-section-images/unified-ca-override-ibm-logo-2.png" alt="twbs"
+                      class="little-logo-img">
+                  </div>
+                </div>
+                <div>
+                  <span class="gray-text">Google</span>
+                </div>
+              </div>
+
+              <h3 class="fs-16px-txt mt-2">Google data analytics</h3>
+
+
+              <div class="d-flex flex-column gap-2 mt-3">
+                <div class="d-flex gap-1 coursera-theme-color">
+                  <i class="bi bi-file-earmark coursera-theme-color"></i>
+                  <div>
+                    <a href="" class="text-decoration-none coursera-theme-color">Make progress toward a
+                      degree</a>
+                  </div>
+                </div>
+
+                <div class="d-flex flex-column gap-2">
+                  <div class="d-flex gap-1 coursera-theme-color reviewsline">
+                    <img src="./assets/images/recently-viewed-products/star.svg" height="16" width="16" alt="">
+                    <p><span class="fw-semibold">4.8</span><span class="gray-text"> (145k reviews)</span></p>
+                  </div>
+                  <p class="gray-text card-category">Professional Certificate</p>
+                </div>
+
+                <div class="d-flex gap-3">
+                  <div>
+                    <i class="bi bi-hand-thumbs-up"></i>
+
+                  </div>
+                  <div class="thumbs-down">
+                    <i class="bi bi-hand-thumbs-down"></i>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+
+      </div>
+      <div class="mt-3">
+        <button type="button" class="btn btn-outline-primary border-1 fw-semibold coursera-theme-color">Show 8
+          more</button>
+      </div>
+  </section>
+
+  <!-- Personalized courses for you -->
+  <section class="container my-5">
+    <div class=".source-sans-font-regular-text fs-14px-txt">
+      <h2 class="section-heading fw-normal">Personalized courses for you</h2>
+
+      <div class="row align-item-end gx-4">
+        <!-- card-1 -->
+        <div class="col-lg-3 col-md-6 col-12 mt-3 main-card1">
+          <div class="card overflow-hidden border border-2">
+            <div class="overflow-hidden card-top-img-container rounded-2 pt-1 p-2">
+              <img src="./assets/images/start-your-new-career/data-scientist-cover.jpg" class="card-img-top p-2"
+                alt="...">
+            </div>
+
+            <div class="card-body">
+
+              <div class="d-flex gap-2 align-items-center">
+                <div>
+                  <div class="little-logo-div1 rounded-2">
+                    <img src="./demo/card-section-images/unified-ca-override-ibm-logo-2.png" alt="twbs"
+                      class="little-logo-img">
+                  </div>
+                </div>
+                <div>
+                  <span class="gray-text">Google</span>
+                </div>
+              </div>
+
+              <h3 class="fs-16px-txt mt-2">Google data analytics</h3>
+
+
+              <div class="d-flex flex-column gap-2 mt-3">
+                <div class="d-flex gap-1 coursera-theme-color">
+                  <i class="bi bi-file-earmark coursera-theme-color"></i>
+                  <div>
+                    <a href="" class="text-decoration-none coursera-theme-color">Make progress toward a
+                      degree</a>
+                  </div>
+                </div>
+
+                <div class="d-flex flex-column gap-2">
+                  <div class="d-flex gap-1 coursera-theme-color reviewsline">
+                    <img src="./assets/images/recently-viewed-products/star.svg" height="16" width="16" alt="">
+                    <p><span class="fw-semibold">4.8</span><span class="gray-text"> (145k reviews)</span></p>
+                  </div>
+                  <p class="gray-text card-category">Professional Certificate</p>
+                </div>
+
+                <div class="d-flex gap-3">
+                  <div>
+                    <i class="bi bi-hand-thumbs-up"></i>
+
+                  </div>
+                  <div class="thumbs-down">
+                    <i class="bi bi-hand-thumbs-down"></i>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- card-2 -->
+        <div class="col-lg-3 col-md-6 col-12 mt-3 main-card1">
+          <div class="card overflow-hidden border border-2">
+            <div class="overflow-hidden card-top-img-container rounded-2 pt-1 p-2">
+              <img src="./assets/images/start-your-new-career/data-scientist-cover.jpg" class="card-img-top p-2"
+                alt="...">
+            </div>
+
+            <div class="card-body">
+
+              <div class="d-flex gap-2 align-items-center">
+                <div>
+                  <div class="little-logo-div1 rounded-2">
+                    <img src="./demo/card-section-images/unified-ca-override-ibm-logo-2.png" alt="twbs"
+                      class="little-logo-img">
+                  </div>
+                </div>
+                <div>
+                  <span class="gray-text">Google</span>
+                </div>
+              </div>
+
+              <h3 class="fs-16px-txt mt-2">Google data analytics</h3>
+
+
+              <div class="d-flex flex-column gap-2 mt-3">
+                <div class="d-flex gap-1 coursera-theme-color">
+                  <i class="bi bi-file-earmark coursera-theme-color"></i>
+                  <div>
+                    <a href="" class="text-decoration-none coursera-theme-color">Make progress toward a
+                      degree</a>
+                  </div>
+                </div>
+
+                <div class="d-flex flex-column gap-2">
+                  <div class="d-flex gap-1 coursera-theme-color reviewsline">
+                    <img src="./assets/images/recently-viewed-products/star.svg" height="16" width="16" alt="">
+                    <p><span class="fw-semibold">4.8</span><span class="gray-text"> (145k reviews)</span></p>
+                  </div>
+                  <p class="gray-text card-category">Professional Certificate</p>
+                </div>
+
+                <div class="d-flex gap-3">
+                  <div>
+                    <i class="bi bi-hand-thumbs-up"></i>
+
+                  </div>
+                  <div class="thumbs-down">
+                    <i class="bi bi-hand-thumbs-down"></i>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- card-3 -->
+        <div class="col-lg-3 col-md-6 col-12 mt-3 main-card1">
+          <div class="card overflow-hidden border border-2">
+            <div class="overflow-hidden card-top-img-container rounded-2 pt-1 p-2">
+              <img src="./assets/images/start-your-new-career/data-scientist-cover.jpg" class="card-img-top p-2"
+                alt="...">
+            </div>
+
+            <div class="card-body">
+
+              <div class="d-flex gap-2 align-items-center">
+                <div>
+                  <div class="little-logo-div1 rounded-2">
+                    <img src="./demo/card-section-images/unified-ca-override-ibm-logo-2.png" alt="twbs"
+                      class="little-logo-img">
+                  </div>
+                </div>
+                <div>
+                  <span class="gray-text">Google</span>
+                </div>
+              </div>
+
+              <h3 class="fs-16px-txt mt-2">Google data analytics</h3>
+
+
+              <div class="d-flex flex-column gap-2 mt-3">
+                <div class="d-flex gap-1 coursera-theme-color">
+                  <i class="bi bi-file-earmark coursera-theme-color"></i>
+                  <div>
+                    <a href="" class="text-decoration-none coursera-theme-color">Make progress toward a
+                      degree</a>
+                  </div>
+                </div>
+
+                <div class="d-flex flex-column gap-2">
+                  <div class="d-flex gap-1 coursera-theme-color reviewsline">
+                    <img src="./assets/images/recently-viewed-products/star.svg" height="16" width="16" alt="">
+                    <p><span class="fw-semibold">4.8</span><span class="gray-text"> (145k reviews)</span></p>
+                  </div>
+                  <p class="gray-text card-category">Professional Certificate</p>
+                </div>
+
+                <div class="d-flex gap-3">
+                  <div>
+                    <i class="bi bi-hand-thumbs-up"></i>
+
+                  </div>
+                  <div class="thumbs-down">
+                    <i class="bi bi-hand-thumbs-down"></i>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- card-4 -->
+        <div class="col-lg-3 col-md-6 col-12 mt-3 main-card1">
+          <div class="card overflow-hidden border border-2">
+            <div class="overflow-hidden card-top-img-container rounded-2 pt-1 p-2">
+              <img src="./assets/images/start-your-new-career/data-scientist-cover.jpg" class="card-img-top p-2"
+                alt="...">
+            </div>
+
+            <div class="card-body">
+
+              <div class="d-flex gap-2 align-items-center">
+                <div>
+                  <div class="little-logo-div1 rounded-2">
+                    <img src="./demo/card-section-images/unified-ca-override-ibm-logo-2.png" alt="twbs"
+                      class="little-logo-img">
+                  </div>
+                </div>
+                <div>
+                  <span class="gray-text">Google</span>
+                </div>
+              </div>
+
+              <h3 class="fs-16px-txt mt-2">Google data analytics</h3>
+
+
+              <div class="d-flex flex-column gap-2 mt-3">
+                <div class="d-flex gap-1 coursera-theme-color">
+                  <i class="bi bi-file-earmark coursera-theme-color"></i>
+                  <div>
+                    <a href="" class="text-decoration-none coursera-theme-color">Make progress toward a
+                      degree</a>
+                  </div>
+                </div>
+
+                <div class="d-flex flex-column gap-2">
+                  <div class="d-flex gap-1 coursera-theme-color reviewsline">
+                    <img src="./assets/images/recently-viewed-products/star.svg" height="16" width="16" alt="">
+                    <p><span class="fw-semibold">4.8</span><span class="gray-text"> (145k reviews)</span></p>
+                  </div>
+                  <p class="gray-text card-category">Professional Certificate</p>
+                </div>
+
+                <div class="d-flex gap-3">
+                  <div>
+                    <i class="bi bi-hand-thumbs-up"></i>
+
+                  </div>
+                  <div class="thumbs-down">
+                    <i class="bi bi-hand-thumbs-down"></i>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+
+      </div>
+      <div class="mt-3">
+        <button type="button" class="btn btn-outline-primary border-1 fw-semibold coursera-theme-color">Show 8
+          more</button>
+      </div>
+  </section>
+
+  <!-- guided projects for you -->
+  <section class="container my-5">
+    <div class=".source-sans-font-regular-text fs-14px-txt">
+      <h2 class="section-heading fw-normal">Guided projects for you</h2>
+
+      <div class="row align-item-end gx-4">
+        <!-- card-1 -->
+        <div class="col-lg-3 col-md-6 col-12 mt-3 main-card1">
+          <div class="card overflow-hidden border border-2">
+            <div class="overflow-hidden card-top-img-container rounded-2 pt-1 p-2">
+              <img src="./assets/images/start-your-new-career/data-scientist-cover.jpg" class="card-img-top p-2"
+                alt="...">
+            </div>
+
+            <div class="card-body">
+
+              <div class="d-flex gap-2 align-items-center">
+                <div>
+                  <div class="little-logo-div1 rounded-2">
+                    <img src="./demo/card-section-images/unified-ca-override-ibm-logo-2.png" alt="twbs"
+                      class="little-logo-img">
+                  </div>
+                </div>
+                <div>
+                  <span class="gray-text">Google</span>
+                </div>
+              </div>
+
+              <h3 class="fs-16px-txt mt-3">Google data analytics</h3>
+
+
+              <div class="d-flex flex-column gap-2 mt-3">
+                <div class="d-flex gap-1 coursera-theme-color d-none">
+                  <i class="bi bi-file-earmark coursera-theme-color"></i>
+                  <div>
+                    <a href="" class="text-decoration-none coursera-theme-color">Make progress toward a
+                      degree</a>
+                  </div>
+                </div>
+
+                <div class="d-flex flex-column gap-2">
+                  <div class="d-flex gap-1 coursera-theme-color reviewsline">
+                    <img src="./assets/images/recently-viewed-products/star.svg" height="16" width="16" alt="">
+                    <p><span class="fw-semibold">4.8</span><span class="gray-text"> (145k reviews)</span></p>
+                  </div>
+                  <p class="gray-text card-category">Professional Certificate</p>
+                </div>
+
+                <div class="d-flex gap-3">
+                  <div>
+                    <i class="bi bi-hand-thumbs-up"></i>
+
+                  </div>
+                  <div class="thumbs-down">
+                    <i class="bi bi-hand-thumbs-down"></i>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- card-2 -->
+        <div class="col-lg-3 col-md-6 col-12 mt-3 main-card1 guided-project-card">
+          <div class="card overflow-hidden border border-2">
+            <div class="overflow-hidden card-top-img-container rounded-2 pt-1 p-2">
+              <img src="./assets/images/start-your-new-career/data-scientist-cover.jpg" class="card-img-top p-2"
+                alt="...">
+            </div>
+
+            <div class="card-body">
+
+              <div class="d-flex gap-2 align-items-center">
+                <div>
+                  <div class="little-logo-div1 rounded-2">
+                    <img src="./demo/card-section-images/unified-ca-override-ibm-logo-2.png" alt="twbs"
+                      class="little-logo-img">
+                  </div>
+                </div>
+                <div>
+                  <span class="gray-text">Google</span>
+                </div>
+              </div>
+
+              <h3 class="fs-16px-txt mt-3">Google data analytics</h3>
+
+
+              <div class="d-flex flex-column gap-2 mt-3">
+                <div class="d-flex gap-1 coursera-theme-color d-none">
+                  <i class="bi bi-file-earmark coursera-theme-color"></i>
+                  <div>
+                    <a href="" class="text-decoration-none coursera-theme-color">Make progress toward a
+                      degree</a>
+                  </div>
+                </div>
+
+                <div class="d-flex flex-column gap-2">
+                  <div class="d-flex gap-1 coursera-theme-color reviewsline">
+                    <img src="./assets/images/recently-viewed-products/star.svg" height="16" width="16" alt="">
+                    <p><span class="fw-semibold">4.8</span><span class="gray-text"> (145k reviews)</span></p>
+                  </div>
+                  <p class="gray-text card-category">Professional Certificate</p>
+                </div>
+
+                <div class="d-flex gap-3">
+                  <div>
+                    <i class="bi bi-hand-thumbs-up"></i>
+
+                  </div>
+                  <div class="thumbs-down">
+                    <i class="bi bi-hand-thumbs-down"></i>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- card-3 -->
+        <div class="col-lg-3 col-md-6 col-12 mt-3 main-card1 guided-project-card">
+          <div class="card overflow-hidden border border-2">
+            <div class="overflow-hidden card-top-img-container rounded-2 pt-1 p-2">
+              <img src="./assets/images/start-your-new-career/data-scientist-cover.jpg" class="card-img-top p-2"
+                alt="...">
+            </div>
+
+            <div class="card-body">
+
+              <div class="d-flex gap-2 align-items-center">
+                <div>
+                  <div class="little-logo-div1 rounded-2">
+                    <img src="./demo/card-section-images/unified-ca-override-ibm-logo-2.png" alt="twbs"
+                      class="little-logo-img">
+                  </div>
+                </div>
+                <div>
+                  <span class="gray-text">Google</span>
+                </div>
+              </div>
+
+              <h3 class="fs-16px-txt mt-3">Google data analytics</h3>
+
+
+              <div class="d-flex flex-column gap-2 mt-3">
+                <div class="d-flex gap-1 coursera-theme-color d-none">
+                  <i class="bi bi-file-earmark coursera-theme-color"></i>
+                  <div>
+                    <a href="" class="text-decoration-none coursera-theme-color">Make progress toward a
+                      degree</a>
+                  </div>
+                </div>
+
+                <div class="d-flex flex-column gap-2">
+                  <div class="d-flex gap-1 coursera-theme-color reviewsline">
+                    <img src="./assets/images/recently-viewed-products/star.svg" height="16" width="16" alt="">
+                    <p><span class="fw-semibold">4.8</span><span class="gray-text"> (145k reviews)</span></p>
+                  </div>
+                  <p class="gray-text card-category">Professional Certificate</p>
+                </div>
+
+                <div class="d-flex gap-3">
+                  <div>
+                    <i class="bi bi-hand-thumbs-up"></i>
+
+                  </div>
+                  <div class="thumbs-down">
+                    <i class="bi bi-hand-thumbs-down"></i>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- card-4 -->
+        <div class="col-lg-3 col-md-6 col-12 mt-3 main-card1 guided-project-card">
+          <div class="card overflow-hidden border border-2">
+            <div class="overflow-hidden card-top-img-container rounded-2 pt-1 p-2">
+              <img src="./assets/images/start-your-new-career/data-scientist-cover.jpg" class="card-img-top p-2"
+                alt="...">
+            </div>
+
+            <div class="card-body">
+
+              <div class="d-flex gap-2 align-items-center">
+                <div>
+                  <div class="little-logo-div1 rounded-2">
+                    <img src="./demo/card-section-images/unified-ca-override-ibm-logo-2.png" alt="twbs"
+                      class="little-logo-img">
+                  </div>
+                </div>
+                <div>
+                  <span class="gray-text">Google</span>
+                </div>
+              </div>
+
+              <h3 class="fs-16px-txt mt-3">Google data analytics</h3>
+
+
+              <div class="d-flex flex-column gap-2 mt-3">
+                <div class="d-flex gap-1 coursera-theme-color d-none">
+                  <i class="bi bi-file-earmark coursera-theme-color"></i>
+                  <div>
+                    <a href="" class="text-decoration-none coursera-theme-color">Make progress toward a
+                      degree</a>
+                  </div>
+                </div>
+
+                <div class="d-flex flex-column gap-2">
+                  <div class="d-flex gap-1 coursera-theme-color reviewsline">
+                    <img src="./assets/images/recently-viewed-products/star.svg" height="16" width="16" alt="">
+                    <p><span class="fw-semibold">4.8</span><span class="gray-text"> (145k reviews)</span></p>
+                  </div>
+                  <p class="gray-text card-category">Professional Certificate</p>
+                </div>
+
+                <div class="d-flex gap-3">
+                  <div>
+                    <i class="bi bi-hand-thumbs-up"></i>
+
+                  </div>
+                  <div class="thumbs-down">
+                    <i class="bi bi-hand-thumbs-down"></i>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
         </div>
 
       </div>
-
-      <!-- card-2 -->
-      <div class="col-lg-3 col-md-6 col-12 mt-3 main-card1">
-        <div class="card overflow-hidden border border-2">
-          <div class="overflow-hidden card-top-img-container rounded-2 pt-1 p-2">
-            <img src="./assets/images/start-your-new-career/data-scientist-cover.jpg" class="card-img-top p-2"
-              alt="...">
-          </div>
-
-          <div class="card-body">
-
-            <div class="d-flex gap-2 align-items-center">
-              <div>
-                <div class="little-logo-div1 rounded-2">
-                  <img src="./demo/card-section-images/unified-ca-override-ibm-logo-2.png" alt="twbs"
-                    class="little-logo-img">
-                </div>
-              </div>
-              <div>
-                <span class="gray-text">Google</span>
-              </div>
-            </div>
-
-            <h3 class="fs-16px-txt mt-2">Google data analytics</h3>
-
-
-            <div class="d-flex flex-column gap-2 mt-3">
-              <div class="d-flex gap-1 coursera-theme-color">
-                <i class="bi bi-file-earmark coursera-theme-color"></i>
-                <div>
-                  <a href="" class="text-decoration-none coursera-theme-color">Make progress toward a
-                    degree</a>
-                </div>
-              </div>
-
-              <div class="d-flex flex-column gap-2">
-                <div class="d-flex gap-1 coursera-theme-color reviewsline">
-                  <img src="./assets/images/recently-viewed-products/star.svg" height="16" width="16" alt="">
-                  <p><span class="fw-semibold">4.8</span><span class="gray-text"> (145k reviews)</span></p>
-                </div>
-                <p class="gray-text card-category">Professional Certificate</p>
-              </div>
-
-              <div class="d-flex gap-3">
-                <div>
-                  <i class="bi bi-hand-thumbs-up"></i>
-
-                </div>
-                <div class="thumbs-down">
-                  <i class="bi bi-hand-thumbs-down"></i>
-
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
+      <div class="mt-3">
+        <button type="button" class="btn btn-outline-primary border-1 fw-semibold coursera-theme-color">Show 8
+          more</button>
       </div>
-
-      <!-- card-3 -->
-      <div class="col-lg-3 col-md-6 col-12 mt-3 main-card1">
-        <div class="card overflow-hidden border border-2">
-          <div class="overflow-hidden card-top-img-container rounded-2 pt-1 p-2">
-            <img src="./assets/images/start-your-new-career/data-scientist-cover.jpg" class="card-img-top p-2"
-              alt="...">
-          </div>
-
-          <div class="card-body">
-
-            <div class="d-flex gap-2 align-items-center">
-              <div>
-                <div class="little-logo-div1 rounded-2">
-                  <img src="./demo/card-section-images/unified-ca-override-ibm-logo-2.png" alt="twbs"
-                    class="little-logo-img">
-                </div>
-              </div>
-              <div>
-                <span class="gray-text">Google</span>
-              </div>
-            </div>
-
-            <h3 class="fs-16px-txt mt-2">Google data analytics</h3>
-
-
-            <div class="d-flex flex-column gap-2 mt-3">
-              <div class="d-flex gap-1 coursera-theme-color">
-                <i class="bi bi-file-earmark coursera-theme-color"></i>
-                <div>
-                  <a href="" class="text-decoration-none coursera-theme-color">Make progress toward a
-                    degree</a>
-                </div>
-              </div>
-
-              <div class="d-flex flex-column gap-2">
-                <div class="d-flex gap-1 coursera-theme-color reviewsline">
-                  <img src="./assets/images/recently-viewed-products/star.svg" height="16" width="16" alt="">
-                  <p><span class="fw-semibold">4.8</span><span class="gray-text"> (145k reviews)</span></p>
-                </div>
-                <p class="gray-text card-category">Professional Certificate</p>
-              </div>
-
-              <div class="d-flex gap-3">
-                <div>
-                  <i class="bi bi-hand-thumbs-up"></i>
-
-                </div>
-                <div class="thumbs-down">
-                  <i class="bi bi-hand-thumbs-down"></i>
-
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-      </div>
-
-      <!-- card-4 -->
-      <div class="col-lg-3 col-md-6 col-12 mt-3 main-card1">
-        <div class="card overflow-hidden border border-2">
-          <div class="overflow-hidden card-top-img-container rounded-2 pt-1 p-2">
-            <img src="./assets/images/start-your-new-career/data-scientist-cover.jpg" class="card-img-top p-2"
-              alt="...">
-          </div>
-
-          <div class="card-body">
-
-            <div class="d-flex gap-2 align-items-center">
-              <div>
-                <div class="little-logo-div1 rounded-2">
-                  <img src="./demo/card-section-images/unified-ca-override-ibm-logo-2.png" alt="twbs"
-                    class="little-logo-img">
-                </div>
-              </div>
-              <div>
-                <span class="gray-text">Google</span>
-              </div>
-            </div>
-
-            <h3 class="fs-16px-txt mt-2">Google data analytics</h3>
-
-
-            <div class="d-flex flex-column gap-2 mt-3">
-              <div class="d-flex gap-1 coursera-theme-color">
-                <i class="bi bi-file-earmark coursera-theme-color"></i>
-                <div>
-                  <a href="" class="text-decoration-none coursera-theme-color">Make progress toward a
-                    degree</a>
-                </div>
-              </div>
-
-              <div class="d-flex flex-column gap-2">
-                <div class="d-flex gap-1 coursera-theme-color reviewsline">
-                  <img src="./assets/images/recently-viewed-products/star.svg" height="16" width="16" alt="">
-                  <p><span class="fw-semibold">4.8</span><span class="gray-text"> (145k reviews)</span></p>
-                </div>
-                <p class="gray-text card-category">Professional Certificate</p>
-              </div>
-
-              <div class="d-flex gap-3">
-                <div>
-                  <i class="bi bi-hand-thumbs-up"></i>
-
-                </div>
-                <div class="thumbs-down">
-                  <i class="bi bi-hand-thumbs-down"></i>
-
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-      </div>
-
-
-    </div>
-    <div class="mt-3">
-      <button type="button" class="btn btn-outline-primary border-1 fw-semibold coursera-theme-color">Show 8
-        more</button>
-    </div>
-</section>
-
-<!-- popular in data science -->
-<section class="container my-5">
-  <div class=".source-sans-font-regular-text fs-14px-txt">
-    <h2 class="section-heading fw-normal">Popular in data science</h2>
-
-    <div class="row align-item-end gx-4">
-      <!-- card-1 -->
-      <div class="col-lg-3 col-md-6 col-12 mt-3 main-card1">
-        <div class="card overflow-hidden border border-2">
-          <div class="overflow-hidden card-top-img-container rounded-2 pt-1 p-2">
-            <img src="./assets/images/start-your-new-career/data-scientist-cover.jpg" class="card-img-top p-2"
-              alt="...">
-          </div>
-
-          <div class="card-body">
-
-            <div class="d-flex gap-2 align-items-center">
-              <div>
-                <div class="little-logo-div1 rounded-2">
-                  <img src="./demo/card-section-images/unified-ca-override-ibm-logo-2.png" alt="twbs"
-                    class="little-logo-img">
-                </div>
-              </div>
-              <div>
-                <span class="gray-text">Google</span>
-              </div>
-            </div>
-
-            <h3 class="fs-16px-txt mt-2">Google data analytics</h3>
-
-
-            <div class="d-flex flex-column gap-2 mt-3">
-              <div class="d-flex gap-1 coursera-theme-color">
-                <i class="bi bi-file-earmark coursera-theme-color"></i>
-                <div>
-                  <a href="" class="text-decoration-none coursera-theme-color">Make progress toward a
-                    degree</a>
-                </div>
-              </div>
-
-              <div class="d-flex flex-column gap-2">
-                <div class="d-flex gap-1 coursera-theme-color reviewsline">
-                  <img src="./assets/images/recently-viewed-products/star.svg" height="16" width="16" alt="">
-                  <p><span class="fw-semibold">4.8</span><span class="gray-text"> (145k reviews)</span></p>
-                </div>
-                <p class="gray-text card-category">Professional Certificate</p>
-              </div>
-
-              <div class="d-flex gap-3">
-                <div>
-                  <i class="bi bi-hand-thumbs-up"></i>
-
-                </div>
-                <div class="thumbs-down">
-                  <i class="bi bi-hand-thumbs-down"></i>
-
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-      </div>
-
-      <!-- card-2 -->
-      <div class="col-lg-3 col-md-6 col-12 mt-3 main-card1">
-        <div class="card overflow-hidden border border-2">
-          <div class="overflow-hidden card-top-img-container rounded-2 pt-1 p-2">
-            <img src="./assets/images/start-your-new-career/data-scientist-cover.jpg" class="card-img-top p-2"
-              alt="...">
-          </div>
-
-          <div class="card-body">
-
-            <div class="d-flex gap-2 align-items-center">
-              <div>
-                <div class="little-logo-div1 rounded-2">
-                  <img src="./demo/card-section-images/unified-ca-override-ibm-logo-2.png" alt="twbs"
-                    class="little-logo-img">
-                </div>
-              </div>
-              <div>
-                <span class="gray-text">Google</span>
-              </div>
-            </div>
-
-            <h3 class="fs-16px-txt mt-2">Google data analytics</h3>
-
-
-            <div class="d-flex flex-column gap-2 mt-3">
-              <div class="d-flex gap-1 coursera-theme-color">
-                <i class="bi bi-file-earmark coursera-theme-color"></i>
-                <div>
-                  <a href="" class="text-decoration-none coursera-theme-color">Make progress toward a
-                    degree</a>
-                </div>
-              </div>
-
-              <div class="d-flex flex-column gap-2">
-                <div class="d-flex gap-1 coursera-theme-color reviewsline">
-                  <img src="./assets/images/recently-viewed-products/star.svg" height="16" width="16" alt="">
-                  <p><span class="fw-semibold">4.8</span><span class="gray-text"> (145k reviews)</span></p>
-                </div>
-                <p class="gray-text card-category">Professional Certificate</p>
-              </div>
-
-              <div class="d-flex gap-3">
-                <div>
-                  <i class="bi bi-hand-thumbs-up"></i>
-
-                </div>
-                <div class="thumbs-down">
-                  <i class="bi bi-hand-thumbs-down"></i>
-
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-      </div>
-
-      <!-- card-3 -->
-      <div class="col-lg-3 col-md-6 col-12 mt-3 main-card1">
-        <div class="card overflow-hidden border border-2">
-          <div class="overflow-hidden card-top-img-container rounded-2 pt-1 p-2">
-            <img src="./assets/images/start-your-new-career/data-scientist-cover.jpg" class="card-img-top p-2"
-              alt="...">
-          </div>
-
-          <div class="card-body">
-
-            <div class="d-flex gap-2 align-items-center">
-              <div>
-                <div class="little-logo-div1 rounded-2">
-                  <img src="./demo/card-section-images/unified-ca-override-ibm-logo-2.png" alt="twbs"
-                    class="little-logo-img">
-                </div>
-              </div>
-              <div>
-                <span class="gray-text">Google</span>
-              </div>
-            </div>
-
-            <h3 class="fs-16px-txt mt-2">Google data analytics</h3>
-
-
-            <div class="d-flex flex-column gap-2 mt-3">
-              <div class="d-flex gap-1 coursera-theme-color">
-                <i class="bi bi-file-earmark coursera-theme-color"></i>
-                <div>
-                  <a href="" class="text-decoration-none coursera-theme-color">Make progress toward a
-                    degree</a>
-                </div>
-              </div>
-
-              <div class="d-flex flex-column gap-2">
-                <div class="d-flex gap-1 coursera-theme-color reviewsline">
-                  <img src="./assets/images/recently-viewed-products/star.svg" height="16" width="16" alt="">
-                  <p><span class="fw-semibold">4.8</span><span class="gray-text"> (145k reviews)</span></p>
-                </div>
-                <p class="gray-text card-category">Professional Certificate</p>
-              </div>
-
-              <div class="d-flex gap-3">
-                <div>
-                  <i class="bi bi-hand-thumbs-up"></i>
-
-                </div>
-                <div class="thumbs-down">
-                  <i class="bi bi-hand-thumbs-down"></i>
-
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-      </div>
-
-      <!-- card-4 -->
-      <div class="col-lg-3 col-md-6 col-12 mt-3 main-card1">
-        <div class="card overflow-hidden border border-2">
-          <div class="overflow-hidden card-top-img-container rounded-2 pt-1 p-2">
-            <img src="./assets/images/start-your-new-career/data-scientist-cover.jpg" class="card-img-top p-2"
-              alt="...">
-          </div>
-
-          <div class="card-body">
-
-            <div class="d-flex gap-2 align-items-center">
-              <div>
-                <div class="little-logo-div1 rounded-2">
-                  <img src="./demo/card-section-images/unified-ca-override-ibm-logo-2.png" alt="twbs"
-                    class="little-logo-img">
-                </div>
-              </div>
-              <div>
-                <span class="gray-text">Google</span>
-              </div>
-            </div>
-
-            <h3 class="fs-16px-txt mt-2">Google data analytics</h3>
-
-
-            <div class="d-flex flex-column gap-2 mt-3">
-              <div class="d-flex gap-1 coursera-theme-color">
-                <i class="bi bi-file-earmark coursera-theme-color"></i>
-                <div>
-                  <a href="" class="text-decoration-none coursera-theme-color">Make progress toward a
-                    degree</a>
-                </div>
-              </div>
-
-              <div class="d-flex flex-column gap-2">
-                <div class="d-flex gap-1 coursera-theme-color reviewsline">
-                  <img src="./assets/images/recently-viewed-products/star.svg" height="16" width="16" alt="">
-                  <p><span class="fw-semibold">4.8</span><span class="gray-text"> (145k reviews)</span></p>
-                </div>
-                <p class="gray-text card-category">Professional Certificate</p>
-              </div>
-
-              <div class="d-flex gap-3">
-                <div>
-                  <i class="bi bi-hand-thumbs-up"></i>
-
-                </div>
-                <div class="thumbs-down">
-                  <i class="bi bi-hand-thumbs-down"></i>
-
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-      </div>
-
-
-    </div>
-    <div class="mt-3">
-      <button type="button" class="btn btn-outline-primary border-1 fw-semibold coursera-theme-color">Show 8
-        more</button>
-    </div>
-</section>
-
-<!-- Personalized courses for you -->
-<section class="container my-5">
-  <div class=".source-sans-font-regular-text fs-14px-txt">
-    <h2 class="section-heading fw-normal">Personalized courses for you</h2>
-
-    <div class="row align-item-end gx-4">
-      <!-- card-1 -->
-      <div class="col-lg-3 col-md-6 col-12 mt-3 main-card1">
-        <div class="card overflow-hidden border border-2">
-          <div class="overflow-hidden card-top-img-container rounded-2 pt-1 p-2">
-            <img src="./assets/images/start-your-new-career/data-scientist-cover.jpg" class="card-img-top p-2"
-              alt="...">
-          </div>
-
-          <div class="card-body">
-
-            <div class="d-flex gap-2 align-items-center">
-              <div>
-                <div class="little-logo-div1 rounded-2">
-                  <img src="./demo/card-section-images/unified-ca-override-ibm-logo-2.png" alt="twbs"
-                    class="little-logo-img">
-                </div>
-              </div>
-              <div>
-                <span class="gray-text">Google</span>
-              </div>
-            </div>
-
-            <h3 class="fs-16px-txt mt-2">Google data analytics</h3>
-
-
-            <div class="d-flex flex-column gap-2 mt-3">
-              <div class="d-flex gap-1 coursera-theme-color">
-                <i class="bi bi-file-earmark coursera-theme-color"></i>
-                <div>
-                  <a href="" class="text-decoration-none coursera-theme-color">Make progress toward a
-                    degree</a>
-                </div>
-              </div>
-
-              <div class="d-flex flex-column gap-2">
-                <div class="d-flex gap-1 coursera-theme-color reviewsline">
-                  <img src="./assets/images/recently-viewed-products/star.svg" height="16" width="16" alt="">
-                  <p><span class="fw-semibold">4.8</span><span class="gray-text"> (145k reviews)</span></p>
-                </div>
-                <p class="gray-text card-category">Professional Certificate</p>
-              </div>
-
-              <div class="d-flex gap-3">
-                <div>
-                  <i class="bi bi-hand-thumbs-up"></i>
-
-                </div>
-                <div class="thumbs-down">
-                  <i class="bi bi-hand-thumbs-down"></i>
-
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-      </div>
-
-      <!-- card-2 -->
-      <div class="col-lg-3 col-md-6 col-12 mt-3 main-card1">
-        <div class="card overflow-hidden border border-2">
-          <div class="overflow-hidden card-top-img-container rounded-2 pt-1 p-2">
-            <img src="./assets/images/start-your-new-career/data-scientist-cover.jpg" class="card-img-top p-2"
-              alt="...">
-          </div>
-
-          <div class="card-body">
-
-            <div class="d-flex gap-2 align-items-center">
-              <div>
-                <div class="little-logo-div1 rounded-2">
-                  <img src="./demo/card-section-images/unified-ca-override-ibm-logo-2.png" alt="twbs"
-                    class="little-logo-img">
-                </div>
-              </div>
-              <div>
-                <span class="gray-text">Google</span>
-              </div>
-            </div>
-
-            <h3 class="fs-16px-txt mt-2">Google data analytics</h3>
-
-
-            <div class="d-flex flex-column gap-2 mt-3">
-              <div class="d-flex gap-1 coursera-theme-color">
-                <i class="bi bi-file-earmark coursera-theme-color"></i>
-                <div>
-                  <a href="" class="text-decoration-none coursera-theme-color">Make progress toward a
-                    degree</a>
-                </div>
-              </div>
-
-              <div class="d-flex flex-column gap-2">
-                <div class="d-flex gap-1 coursera-theme-color reviewsline">
-                  <img src="./assets/images/recently-viewed-products/star.svg" height="16" width="16" alt="">
-                  <p><span class="fw-semibold">4.8</span><span class="gray-text"> (145k reviews)</span></p>
-                </div>
-                <p class="gray-text card-category">Professional Certificate</p>
-              </div>
-
-              <div class="d-flex gap-3">
-                <div>
-                  <i class="bi bi-hand-thumbs-up"></i>
-
-                </div>
-                <div class="thumbs-down">
-                  <i class="bi bi-hand-thumbs-down"></i>
-
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-      </div>
-
-      <!-- card-3 -->
-      <div class="col-lg-3 col-md-6 col-12 mt-3 main-card1">
-        <div class="card overflow-hidden border border-2">
-          <div class="overflow-hidden card-top-img-container rounded-2 pt-1 p-2">
-            <img src="./assets/images/start-your-new-career/data-scientist-cover.jpg" class="card-img-top p-2"
-              alt="...">
-          </div>
-
-          <div class="card-body">
-
-            <div class="d-flex gap-2 align-items-center">
-              <div>
-                <div class="little-logo-div1 rounded-2">
-                  <img src="./demo/card-section-images/unified-ca-override-ibm-logo-2.png" alt="twbs"
-                    class="little-logo-img">
-                </div>
-              </div>
-              <div>
-                <span class="gray-text">Google</span>
-              </div>
-            </div>
-
-            <h3 class="fs-16px-txt mt-2">Google data analytics</h3>
-
-
-            <div class="d-flex flex-column gap-2 mt-3">
-              <div class="d-flex gap-1 coursera-theme-color">
-                <i class="bi bi-file-earmark coursera-theme-color"></i>
-                <div>
-                  <a href="" class="text-decoration-none coursera-theme-color">Make progress toward a
-                    degree</a>
-                </div>
-              </div>
-
-              <div class="d-flex flex-column gap-2">
-                <div class="d-flex gap-1 coursera-theme-color reviewsline">
-                  <img src="./assets/images/recently-viewed-products/star.svg" height="16" width="16" alt="">
-                  <p><span class="fw-semibold">4.8</span><span class="gray-text"> (145k reviews)</span></p>
-                </div>
-                <p class="gray-text card-category">Professional Certificate</p>
-              </div>
-
-              <div class="d-flex gap-3">
-                <div>
-                  <i class="bi bi-hand-thumbs-up"></i>
-
-                </div>
-                <div class="thumbs-down">
-                  <i class="bi bi-hand-thumbs-down"></i>
-
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-      </div>
-
-      <!-- card-4 -->
-      <div class="col-lg-3 col-md-6 col-12 mt-3 main-card1">
-        <div class="card overflow-hidden border border-2">
-          <div class="overflow-hidden card-top-img-container rounded-2 pt-1 p-2">
-            <img src="./assets/images/start-your-new-career/data-scientist-cover.jpg" class="card-img-top p-2"
-              alt="...">
-          </div>
-
-          <div class="card-body">
-
-            <div class="d-flex gap-2 align-items-center">
-              <div>
-                <div class="little-logo-div1 rounded-2">
-                  <img src="./demo/card-section-images/unified-ca-override-ibm-logo-2.png" alt="twbs"
-                    class="little-logo-img">
-                </div>
-              </div>
-              <div>
-                <span class="gray-text">Google</span>
-              </div>
-            </div>
-
-            <h3 class="fs-16px-txt mt-2">Google data analytics</h3>
-
-
-            <div class="d-flex flex-column gap-2 mt-3">
-              <div class="d-flex gap-1 coursera-theme-color">
-                <i class="bi bi-file-earmark coursera-theme-color"></i>
-                <div>
-                  <a href="" class="text-decoration-none coursera-theme-color">Make progress toward a
-                    degree</a>
-                </div>
-              </div>
-
-              <div class="d-flex flex-column gap-2">
-                <div class="d-flex gap-1 coursera-theme-color reviewsline">
-                  <img src="./assets/images/recently-viewed-products/star.svg" height="16" width="16" alt="">
-                  <p><span class="fw-semibold">4.8</span><span class="gray-text"> (145k reviews)</span></p>
-                </div>
-                <p class="gray-text card-category">Professional Certificate</p>
-              </div>
-
-              <div class="d-flex gap-3">
-                <div>
-                  <i class="bi bi-hand-thumbs-up"></i>
-
-                </div>
-                <div class="thumbs-down">
-                  <i class="bi bi-hand-thumbs-down"></i>
-
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-      </div>
-
-
-    </div>
-    <div class="mt-3">
-      <button type="button" class="btn btn-outline-primary border-1 fw-semibold coursera-theme-color">Show 8
-        more</button>
-    </div>
-</section>
-
-<!-- guided projects for you -->
-<section class="container my-5">
-  <div class=".source-sans-font-regular-text fs-14px-txt">
-    <h2 class="section-heading fw-normal">Guided projects for you</h2>
-
-    <div class="row align-item-end gx-4">
-      <!-- card-1 -->
-      <div class="col-lg-3 col-md-6 col-12 mt-3 main-card1">
-        <div class="card overflow-hidden border border-2">
-          <div class="overflow-hidden card-top-img-container rounded-2 pt-1 p-2">
-            <img src="./assets/images/start-your-new-career/data-scientist-cover.jpg" class="card-img-top p-2"
-              alt="...">
-          </div>
-
-          <div class="card-body">
-
-            <div class="d-flex gap-2 align-items-center">
-              <div>
-                <div class="little-logo-div1 rounded-2">
-                  <img src="./demo/card-section-images/unified-ca-override-ibm-logo-2.png" alt="twbs"
-                    class="little-logo-img">
-                </div>
-              </div>
-              <div>
-                <span class="gray-text">Google</span>
-              </div>
-            </div>
-
-            <h3 class="fs-16px-txt mt-3">Google data analytics</h3>
-
-
-            <div class="d-flex flex-column gap-2 mt-3">
-              <div class="d-flex gap-1 coursera-theme-color d-none">
-                <i class="bi bi-file-earmark coursera-theme-color"></i>
-                <div>
-                  <a href="" class="text-decoration-none coursera-theme-color">Make progress toward a
-                    degree</a>
-                </div>
-              </div>
-
-              <div class="d-flex flex-column gap-2">
-                <div class="d-flex gap-1 coursera-theme-color reviewsline">
-                  <img src="./assets/images/recently-viewed-products/star.svg" height="16" width="16" alt="">
-                  <p><span class="fw-semibold">4.8</span><span class="gray-text"> (145k reviews)</span></p>
-                </div>
-                <p class="gray-text card-category">Professional Certificate</p>
-              </div>
-
-              <div class="d-flex gap-3">
-                <div>
-                  <i class="bi bi-hand-thumbs-up"></i>
-
-                </div>
-                <div class="thumbs-down">
-                  <i class="bi bi-hand-thumbs-down"></i>
-
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-      </div>
-
-      <!-- card-2 -->
-      <div class="col-lg-3 col-md-6 col-12 mt-3 main-card1 guided-project-card">
-        <div class="card overflow-hidden border border-2">
-          <div class="overflow-hidden card-top-img-container rounded-2 pt-1 p-2">
-            <img src="./assets/images/start-your-new-career/data-scientist-cover.jpg" class="card-img-top p-2"
-              alt="...">
-          </div>
-
-          <div class="card-body">
-
-            <div class="d-flex gap-2 align-items-center">
-              <div>
-                <div class="little-logo-div1 rounded-2">
-                  <img src="./demo/card-section-images/unified-ca-override-ibm-logo-2.png" alt="twbs"
-                    class="little-logo-img">
-                </div>
-              </div>
-              <div>
-                <span class="gray-text">Google</span>
-              </div>
-            </div>
-
-            <h3 class="fs-16px-txt mt-3">Google data analytics</h3>
-
-
-            <div class="d-flex flex-column gap-2 mt-3">
-              <div class="d-flex gap-1 coursera-theme-color d-none">
-                <i class="bi bi-file-earmark coursera-theme-color"></i>
-                <div>
-                  <a href="" class="text-decoration-none coursera-theme-color">Make progress toward a
-                    degree</a>
-                </div>
-              </div>
-
-              <div class="d-flex flex-column gap-2">
-                <div class="d-flex gap-1 coursera-theme-color reviewsline">
-                  <img src="./assets/images/recently-viewed-products/star.svg" height="16" width="16" alt="">
-                  <p><span class="fw-semibold">4.8</span><span class="gray-text"> (145k reviews)</span></p>
-                </div>
-                <p class="gray-text card-category">Professional Certificate</p>
-              </div>
-
-              <div class="d-flex gap-3">
-                <div>
-                  <i class="bi bi-hand-thumbs-up"></i>
-
-                </div>
-                <div class="thumbs-down">
-                  <i class="bi bi-hand-thumbs-down"></i>
-
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-      </div>
-
-      <!-- card-3 -->
-      <div class="col-lg-3 col-md-6 col-12 mt-3 main-card1 guided-project-card">
-        <div class="card overflow-hidden border border-2">
-          <div class="overflow-hidden card-top-img-container rounded-2 pt-1 p-2">
-            <img src="./assets/images/start-your-new-career/data-scientist-cover.jpg" class="card-img-top p-2"
-              alt="...">
-          </div>
-
-          <div class="card-body">
-
-            <div class="d-flex gap-2 align-items-center">
-              <div>
-                <div class="little-logo-div1 rounded-2">
-                  <img src="./demo/card-section-images/unified-ca-override-ibm-logo-2.png" alt="twbs"
-                    class="little-logo-img">
-                </div>
-              </div>
-              <div>
-                <span class="gray-text">Google</span>
-              </div>
-            </div>
-
-            <h3 class="fs-16px-txt mt-3">Google data analytics</h3>
-
-
-            <div class="d-flex flex-column gap-2 mt-3">
-              <div class="d-flex gap-1 coursera-theme-color d-none">
-                <i class="bi bi-file-earmark coursera-theme-color"></i>
-                <div>
-                  <a href="" class="text-decoration-none coursera-theme-color">Make progress toward a
-                    degree</a>
-                </div>
-              </div>
-
-              <div class="d-flex flex-column gap-2">
-                <div class="d-flex gap-1 coursera-theme-color reviewsline">
-                  <img src="./assets/images/recently-viewed-products/star.svg" height="16" width="16" alt="">
-                  <p><span class="fw-semibold">4.8</span><span class="gray-text"> (145k reviews)</span></p>
-                </div>
-                <p class="gray-text card-category">Professional Certificate</p>
-              </div>
-
-              <div class="d-flex gap-3">
-                <div>
-                  <i class="bi bi-hand-thumbs-up"></i>
-
-                </div>
-                <div class="thumbs-down">
-                  <i class="bi bi-hand-thumbs-down"></i>
-
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-      </div>
-
-      <!-- card-4 -->
-      <div class="col-lg-3 col-md-6 col-12 mt-3 main-card1 guided-project-card">
-        <div class="card overflow-hidden border border-2">
-          <div class="overflow-hidden card-top-img-container rounded-2 pt-1 p-2">
-            <img src="./assets/images/start-your-new-career/data-scientist-cover.jpg" class="card-img-top p-2"
-              alt="...">
-          </div>
-
-          <div class="card-body">
-
-            <div class="d-flex gap-2 align-items-center">
-              <div>
-                <div class="little-logo-div1 rounded-2">
-                  <img src="./demo/card-section-images/unified-ca-override-ibm-logo-2.png" alt="twbs"
-                    class="little-logo-img">
-                </div>
-              </div>
-              <div>
-                <span class="gray-text">Google</span>
-              </div>
-            </div>
-
-            <h3 class="fs-16px-txt mt-3">Google data analytics</h3>
-
-
-            <div class="d-flex flex-column gap-2 mt-3">
-              <div class="d-flex gap-1 coursera-theme-color d-none">
-                <i class="bi bi-file-earmark coursera-theme-color"></i>
-                <div>
-                  <a href="" class="text-decoration-none coursera-theme-color">Make progress toward a
-                    degree</a>
-                </div>
-              </div>
-
-              <div class="d-flex flex-column gap-2">
-                <div class="d-flex gap-1 coursera-theme-color reviewsline">
-                  <img src="./assets/images/recently-viewed-products/star.svg" height="16" width="16" alt="">
-                  <p><span class="fw-semibold">4.8</span><span class="gray-text"> (145k reviews)</span></p>
-                </div>
-                <p class="gray-text card-category">Professional Certificate</p>
-              </div>
-
-              <div class="d-flex gap-3">
-                <div>
-                  <i class="bi bi-hand-thumbs-up"></i>
-
-                </div>
-                <div class="thumbs-down">
-                  <i class="bi bi-hand-thumbs-down"></i>
-
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-      </div>
-
-    </div>
-    <div class="mt-3">
-      <button type="button" class="btn btn-outline-primary border-1 fw-semibold coursera-theme-color">Show 8
-        more</button>
-    </div>
-</section>
-
-<!-- learn a skill in 2 hours -->
-<section class="container my-5">
-  <div class=" .source-sans-font-regular-text fs-14px-txt">
-    <h2 class="section-heading fw-normal">Learn a skill in 2 hours</h2>
-
-    <div class="row align-item-end gx-4">
-      <!-- card-1 -->
-      <div class="col-lg-3 col-md-6 col-12 mt-3 main-card1">
-        <div class="card overflow-hidden border border-2">
-          <div class="overflow-hidden card-top-img-container rounded-2 pt-1 p-2 position-relative">
-            <img src="./assets/images/start-your-new-career/data-scientist-cover.jpg" class="card-img-top p-2 "
-              alt="...">
+  </section>
+
+  <!-- learn a skill in 2 hours -->
+  <section class="container my-5">
+    <div class=" .source-sans-font-regular-text fs-14px-txt">
+      <h2 class="section-heading fw-normal">Learn a skill in 2 hours</h2>
+
+      <div class="row align-item-end gx-4">
+        <!-- card-1 -->
+        <div class="col-lg-3 col-md-6 col-12 mt-3 main-card1">
+          <div class="card overflow-hidden border border-2">
+            <div class="overflow-hidden card-top-img-container rounded-2 pt-1 p-2 position-relative">
+              <img src="./assets/images/start-your-new-career/data-scientist-cover.jpg" class="card-img-top p-2 "
+                alt="...">
               <span class="translate-middle badge rounded-pill bg-danger">
                 Free
               </span>
-          </div>
-
-          <div class="card-body">
-
-            <div class="d-flex gap-2 align-items-center">
-              <div>
-                <div class="little-logo-div1 rounded-2">
-                  <img src="./demo/card-section-images/unified-ca-override-ibm-logo-2.png" alt="twbs"
-                    class="little-logo-img">
-                </div>
-              </div>
-              <div>
-                <span class="gray-text">Google</span>
-              </div>
             </div>
 
-            <h3 class="fs-16px-txt mt-2">Google data analytics</h3>
+            <div class="card-body">
 
-
-            <div class="d-flex flex-column gap-2 mt-3">
-              <div class="d-flex gap-1 coursera-theme-color">
-                <i class="bi bi-file-earmark coursera-theme-color"></i>
+              <div class="d-flex gap-2 align-items-center">
                 <div>
-                  <a href="" class="text-decoration-none coursera-theme-color">Make progress toward a
-                    degree</a>
+                  <div class="little-logo-div1 rounded-2">
+                    <img src="./demo/card-section-images/unified-ca-override-ibm-logo-2.png" alt="twbs"
+                      class="little-logo-img">
+                  </div>
+                </div>
+                <div>
+                  <span class="gray-text">Google</span>
                 </div>
               </div>
 
-              <div class="d-flex flex-column gap-2">
-                <div class="d-flex gap-1 coursera-theme-color reviewsline">
-                  <img src="./assets/images/recently-viewed-products/star.svg" height="16" width="16" alt="">
-                  <p><span class="fw-semibold">4.8</span><span class="gray-text"> (145k reviews)</span></p>
+              <h3 class="fs-16px-txt mt-2">Google data analytics</h3>
+
+
+              <div class="d-flex flex-column gap-2 mt-3">
+                <div class="d-flex gap-1 coursera-theme-color">
+                  <i class="bi bi-file-earmark coursera-theme-color"></i>
+                  <div>
+                    <a href="" class="text-decoration-none coursera-theme-color">Make progress toward a
+                      degree</a>
+                  </div>
                 </div>
-                <p class="gray-text card-category">Professional Certificate</p>
-              </div>
 
-              <div class="d-flex gap-3">
-                <div>
-                  <i class="bi bi-hand-thumbs-up"></i>
-
+                <div class="d-flex flex-column gap-2">
+                  <div class="d-flex gap-1 coursera-theme-color reviewsline">
+                    <img src="./assets/images/recently-viewed-products/star.svg" height="16" width="16" alt="">
+                    <p><span class="fw-semibold">4.8</span><span class="gray-text"> (145k reviews)</span></p>
+                  </div>
+                  <p class="gray-text card-category">Professional Certificate</p>
                 </div>
-                <div class="thumbs-down">
-                  <i class="bi bi-hand-thumbs-down"></i>
 
+                <div class="d-flex gap-3">
+                  <div>
+                    <i class="bi bi-hand-thumbs-up"></i>
+
+                  </div>
+                  <div class="thumbs-down">
+                    <i class="bi bi-hand-thumbs-down"></i>
+
+                  </div>
                 </div>
               </div>
             </div>
           </div>
+
         </div>
 
-      </div>
-
-      <!-- card-2 -->
-      <div class="col-lg-3 col-md-6 col-12 mt-3 main-card1">
-        <div class="card overflow-hidden border border-2">
-          <div class="overflow-hidden card-top-img-container rounded-2 pt-1 p-2">
-            <img src="./assets/images/start-your-new-career/data-scientist-cover.jpg" class="card-img-top p-2"
-              alt="...">
+        <!-- card-2 -->
+        <div class="col-lg-3 col-md-6 col-12 mt-3 main-card1">
+          <div class="card overflow-hidden border border-2">
+            <div class="overflow-hidden card-top-img-container rounded-2 pt-1 p-2">
+              <img src="./assets/images/start-your-new-career/data-scientist-cover.jpg" class="card-img-top p-2"
+                alt="...">
               <span class="translate-middle badge rounded-pill bg-danger">
                 Free
               </span>
-          </div>
-
-          <div class="card-body">
-
-            <div class="d-flex gap-2 align-items-center">
-              <div>
-                <div class="little-logo-div1 rounded-2">
-                  <img src="./demo/card-section-images/unified-ca-override-ibm-logo-2.png" alt="twbs"
-                    class="little-logo-img">
-                </div>
-              </div>
-              <div>
-                <span class="gray-text">Google</span>
-              </div>
             </div>
 
-            <h3 class="fs-16px-txt mt-2">Google data analytics</h3>
+            <div class="card-body">
 
-
-            <div class="d-flex flex-column gap-2 mt-3">
-              <div class="d-flex gap-1 coursera-theme-color">
-                <i class="bi bi-file-earmark coursera-theme-color"></i>
+              <div class="d-flex gap-2 align-items-center">
                 <div>
-                  <a href="" class="text-decoration-none coursera-theme-color">Make progress toward a
-                    degree</a>
+                  <div class="little-logo-div1 rounded-2">
+                    <img src="./demo/card-section-images/unified-ca-override-ibm-logo-2.png" alt="twbs"
+                      class="little-logo-img">
+                  </div>
+                </div>
+                <div>
+                  <span class="gray-text">Google</span>
                 </div>
               </div>
 
-              <div class="d-flex flex-column gap-2">
-                <div class="d-flex gap-1 coursera-theme-color reviewsline">
-                  <img src="./assets/images/recently-viewed-products/star.svg" height="16" width="16" alt="">
-                  <p><span class="fw-semibold">4.8</span><span class="gray-text"> (145k reviews)</span></p>
+              <h3 class="fs-16px-txt mt-2">Google data analytics</h3>
+
+
+              <div class="d-flex flex-column gap-2 mt-3">
+                <div class="d-flex gap-1 coursera-theme-color">
+                  <i class="bi bi-file-earmark coursera-theme-color"></i>
+                  <div>
+                    <a href="" class="text-decoration-none coursera-theme-color">Make progress toward a
+                      degree</a>
+                  </div>
                 </div>
-                <p class="gray-text card-category">Professional Certificate</p>
-              </div>
 
-              <div class="d-flex gap-3">
-                <div>
-                  <i class="bi bi-hand-thumbs-up"></i>
-
+                <div class="d-flex flex-column gap-2">
+                  <div class="d-flex gap-1 coursera-theme-color reviewsline">
+                    <img src="./assets/images/recently-viewed-products/star.svg" height="16" width="16" alt="">
+                    <p><span class="fw-semibold">4.8</span><span class="gray-text"> (145k reviews)</span></p>
+                  </div>
+                  <p class="gray-text card-category">Professional Certificate</p>
                 </div>
-                <div class="thumbs-down">
-                  <i class="bi bi-hand-thumbs-down"></i>
 
+                <div class="d-flex gap-3">
+                  <div>
+                    <i class="bi bi-hand-thumbs-up"></i>
+
+                  </div>
+                  <div class="thumbs-down">
+                    <i class="bi bi-hand-thumbs-down"></i>
+
+                  </div>
                 </div>
               </div>
             </div>
           </div>
+
         </div>
 
-      </div>
-
-      <!-- card-3 -->
-      <div class="col-lg-3 col-md-6 col-12 mt-3 main-card1">
-        <div class="card overflow-hidden border border-2">
-          <div class="overflow-hidden card-top-img-container rounded-2 pt-1 p-2">
-            <img src="./assets/images/start-your-new-career/data-scientist-cover.jpg" class="card-img-top p-2"
-              alt="...">
+        <!-- card-3 -->
+        <div class="col-lg-3 col-md-6 col-12 mt-3 main-card1">
+          <div class="card overflow-hidden border border-2">
+            <div class="overflow-hidden card-top-img-container rounded-2 pt-1 p-2">
+              <img src="./assets/images/start-your-new-career/data-scientist-cover.jpg" class="card-img-top p-2"
+                alt="...">
               <span class="translate-middle badge rounded-pill bg-danger">
                 Free
               </span>
-          </div>
-
-          <div class="card-body">
-
-            <div class="d-flex gap-2 align-items-center">
-              <div>
-                <div class="little-logo-div1 rounded-2">
-                  <img src="./demo/card-section-images/unified-ca-override-ibm-logo-2.png" alt="twbs"
-                    class="little-logo-img">
-                </div>
-              </div>
-              <div>
-                <span class="gray-text">Google</span>
-              </div>
             </div>
 
-            <h3 class="fs-16px-txt mt-2">Google data analytics</h3>
+            <div class="card-body">
 
-
-            <div class="d-flex flex-column gap-2 mt-3">
-              <div class="d-flex gap-1 coursera-theme-color">
-                <i class="bi bi-file-earmark coursera-theme-color"></i>
+              <div class="d-flex gap-2 align-items-center">
                 <div>
-                  <a href="" class="text-decoration-none coursera-theme-color">Make progress toward a
-                    degree</a>
+                  <div class="little-logo-div1 rounded-2">
+                    <img src="./demo/card-section-images/unified-ca-override-ibm-logo-2.png" alt="twbs"
+                      class="little-logo-img">
+                  </div>
+                </div>
+                <div>
+                  <span class="gray-text">Google</span>
                 </div>
               </div>
 
-              <div class="d-flex flex-column gap-2">
-                <div class="d-flex gap-1 coursera-theme-color reviewsline">
-                  <img src="./assets/images/recently-viewed-products/star.svg" height="16" width="16" alt="">
-                  <p><span class="fw-semibold">4.8</span><span class="gray-text"> (145k reviews)</span></p>
+              <h3 class="fs-16px-txt mt-2">Google data analytics</h3>
+
+
+              <div class="d-flex flex-column gap-2 mt-3">
+                <div class="d-flex gap-1 coursera-theme-color">
+                  <i class="bi bi-file-earmark coursera-theme-color"></i>
+                  <div>
+                    <a href="" class="text-decoration-none coursera-theme-color">Make progress toward a
+                      degree</a>
+                  </div>
                 </div>
-                <p class="gray-text card-category">Professional Certificate</p>
-              </div>
 
-              <div class="d-flex gap-3">
-                <div>
-                  <i class="bi bi-hand-thumbs-up"></i>
-
+                <div class="d-flex flex-column gap-2">
+                  <div class="d-flex gap-1 coursera-theme-color reviewsline">
+                    <img src="./assets/images/recently-viewed-products/star.svg" height="16" width="16" alt="">
+                    <p><span class="fw-semibold">4.8</span><span class="gray-text"> (145k reviews)</span></p>
+                  </div>
+                  <p class="gray-text card-category">Professional Certificate</p>
                 </div>
-                <div class="thumbs-down">
-                  <i class="bi bi-hand-thumbs-down"></i>
 
+                <div class="d-flex gap-3">
+                  <div>
+                    <i class="bi bi-hand-thumbs-up"></i>
+
+                  </div>
+                  <div class="thumbs-down">
+                    <i class="bi bi-hand-thumbs-down"></i>
+
+                  </div>
                 </div>
               </div>
             </div>
           </div>
+
         </div>
 
-      </div>
-
-      <!-- card-4 -->
-      <div class="col-lg-3 col-md-6 col-12 mt-3 main-card1">
-        <div class="card overflow-hidden border border-2">
-          <div class="overflow-hidden card-top-img-container rounded-2 pt-1 p-2">
-            <img src="./assets/images/start-your-new-career/data-scientist-cover.jpg" class="card-img-top p-2"
-              alt="...">
+        <!-- card-4 -->
+        <div class="col-lg-3 col-md-6 col-12 mt-3 main-card1">
+          <div class="card overflow-hidden border border-2">
+            <div class="overflow-hidden card-top-img-container rounded-2 pt-1 p-2">
+              <img src="./assets/images/start-your-new-career/data-scientist-cover.jpg" class="card-img-top p-2"
+                alt="...">
               <span class="translate-middle badge rounded-pill bg-danger">
                 Free
               </span>
-          </div>
-
-          <div class="card-body">
-
-            <div class="d-flex gap-2 align-items-center">
-              <div>
-                <div class="little-logo-div1 rounded-2">
-                  <img src="./demo/card-section-images/unified-ca-override-ibm-logo-2.png" alt="twbs"
-                    class="little-logo-img">
-                </div>
-              </div>
-              <div>
-                <span class="gray-text">Google</span>
-              </div>
             </div>
 
-            <h3 class="fs-16px-txt mt-2">Google data analytics</h3>
+            <div class="card-body">
 
-
-            <div class="d-flex flex-column gap-2 mt-3">
-              <div class="d-flex gap-1 coursera-theme-color">
-                <i class="bi bi-file-earmark coursera-theme-color"></i>
+              <div class="d-flex gap-2 align-items-center">
                 <div>
-                  <a href="" class="text-decoration-none coursera-theme-color">Make progress toward a
-                    degree</a>
+                  <div class="little-logo-div1 rounded-2">
+                    <img src="./demo/card-section-images/unified-ca-override-ibm-logo-2.png" alt="twbs"
+                      class="little-logo-img">
+                  </div>
+                </div>
+                <div>
+                  <span class="gray-text">Google</span>
                 </div>
               </div>
 
-              <div class="d-flex flex-column gap-2">
-                <div class="d-flex gap-1 coursera-theme-color reviewsline">
-                  <img src="./assets/images/recently-viewed-products/star.svg" height="16" width="16" alt="">
-                  <p><span class="fw-semibold">4.8</span><span class="gray-text"> (145k reviews)</span></p>
+              <h3 class="fs-16px-txt mt-2">Google data analytics</h3>
+
+
+              <div class="d-flex flex-column gap-2 mt-3">
+                <div class="d-flex gap-1 coursera-theme-color">
+                  <i class="bi bi-file-earmark coursera-theme-color"></i>
+                  <div>
+                    <a href="" class="text-decoration-none coursera-theme-color">Make progress toward a
+                      degree</a>
+                  </div>
                 </div>
-                <p class="gray-text card-category">Professional Certificate</p>
-              </div>
 
-              <div class="d-flex gap-3">
-                <div>
-                  <i class="bi bi-hand-thumbs-up"></i>
-
+                <div class="d-flex flex-column gap-2">
+                  <div class="d-flex gap-1 coursera-theme-color reviewsline">
+                    <img src="./assets/images/recently-viewed-products/star.svg" height="16" width="16" alt="">
+                    <p><span class="fw-semibold">4.8</span><span class="gray-text"> (145k reviews)</span></p>
+                  </div>
+                  <p class="gray-text card-category">Professional Certificate</p>
                 </div>
-                <div class="thumbs-down">
-                  <i class="bi bi-hand-thumbs-down"></i>
 
+                <div class="d-flex gap-3">
+                  <div>
+                    <i class="bi bi-hand-thumbs-up"></i>
+
+                  </div>
+                  <div class="thumbs-down">
+                    <i class="bi bi-hand-thumbs-down"></i>
+
+                  </div>
                 </div>
               </div>
             </div>
           </div>
+
         </div>
 
+
       </div>
+      <div class="mt-3">
+        <button type="button" class="btn btn-outline-primary border-1 fw-semibold coursera-theme-color">Show 8
+          more</button>
+      </div>
+  </section>
 
 
-    </div>
-    <div class="mt-3">
-      <button type="button" class="btn btn-outline-primary border-1 fw-semibold coursera-theme-color">Show 8
-        more</button>
-    </div>
-</section>
+  <!-- grow your skillset -->
+  <section class="container my-5">
+    <div class=".source-sans-font-regular-text fs-14px-txt">
+      <h2 class="section-heading fw-normal">Grow your skillset</h2>
 
-
-<!-- grow your skillset -->
-<section class="container my-5">
-  <div class=".source-sans-font-regular-text fs-14px-txt">
-    <h2 class="section-heading fw-normal">Grow your skillset</h2>
-
-    <div class="row align-item-end gx-4">
-      <!-- card-1 -->
-      <div class="col-lg-3 col-md-6 col-12 mt-3 main-card1">
-        <div class="card overflow-hidden border border-2">
-          <div class="overflow-hidden card-top-img-container rounded-2 pt-1 p-2">
-            <img src="./assets/images/start-your-new-career/data-scientist-cover.jpg" class="card-img-top p-2"
-              alt="...">
-          </div>
-
-          <div class="card-body">
-
-            <div class="d-flex gap-2 align-items-center">
-              <div>
-                <div class="little-logo-div1 rounded-2">
-                  <img src="./demo/card-section-images/unified-ca-override-ibm-logo-2.png" alt="twbs"
-                    class="little-logo-img">
-                </div>
-              </div>
-              <div>
-                <span class="gray-text">Google</span>
-              </div>
+      <div class="row align-item-end gx-4">
+        <!-- card-1 -->
+        <div class="col-lg-3 col-md-6 col-12 mt-3 main-card1">
+          <div class="card overflow-hidden border border-2">
+            <div class="overflow-hidden card-top-img-container rounded-2 pt-1 p-2">
+              <img src="./assets/images/start-your-new-career/data-scientist-cover.jpg" class="card-img-top p-2"
+                alt="...">
             </div>
 
-            <h3 class="fs-16px-txt mt-2">Google data analytics</h3>
+            <div class="card-body">
 
-
-            <div class="d-flex flex-column gap-2 mt-3">
-              <div class="d-flex gap-1 coursera-theme-color">
-                <i class="bi bi-file-earmark coursera-theme-color"></i>
+              <div class="d-flex gap-2 align-items-center">
                 <div>
-                  <a href="" class="text-decoration-none coursera-theme-color">Make progress toward a
-                    degree</a>
+                  <div class="little-logo-div1 rounded-2">
+                    <img src="./demo/card-section-images/unified-ca-override-ibm-logo-2.png" alt="twbs"
+                      class="little-logo-img">
+                  </div>
+                </div>
+                <div>
+                  <span class="gray-text">Google</span>
                 </div>
               </div>
 
-              <div class="d-flex flex-column gap-2">
-                <div class="d-flex gap-1 coursera-theme-color reviewsline">
-                  <img src="./assets/images/recently-viewed-products/star.svg" height="16" width="16" alt="">
-                  <p><span class="fw-semibold">4.8</span><span class="gray-text"> (145k reviews)</span></p>
+              <h3 class="fs-16px-txt mt-2">Google data analytics</h3>
+
+
+              <div class="d-flex flex-column gap-2 mt-3">
+                <div class="d-flex gap-1 coursera-theme-color">
+                  <i class="bi bi-file-earmark coursera-theme-color"></i>
+                  <div>
+                    <a href="" class="text-decoration-none coursera-theme-color">Make progress toward a
+                      degree</a>
+                  </div>
                 </div>
-                <p class="gray-text card-category">Professional Certificate</p>
-              </div>
 
-              <div class="d-flex gap-3">
-                <div>
-                  <i class="bi bi-hand-thumbs-up"></i>
-
+                <div class="d-flex flex-column gap-2">
+                  <div class="d-flex gap-1 coursera-theme-color reviewsline">
+                    <img src="./assets/images/recently-viewed-products/star.svg" height="16" width="16" alt="">
+                    <p><span class="fw-semibold">4.8</span><span class="gray-text"> (145k reviews)</span></p>
+                  </div>
+                  <p class="gray-text card-category">Professional Certificate</p>
                 </div>
-                <div class="thumbs-down">
-                  <i class="bi bi-hand-thumbs-down"></i>
 
+                <div class="d-flex gap-3">
+                  <div>
+                    <i class="bi bi-hand-thumbs-up"></i>
+
+                  </div>
+                  <div class="thumbs-down">
+                    <i class="bi bi-hand-thumbs-down"></i>
+
+                  </div>
                 </div>
               </div>
             </div>
           </div>
+
         </div>
 
-      </div>
-
-      <!-- card-2 -->
-      <div class="col-lg-3 col-md-6 col-12 mt-3 main-card1">
-        <div class="card overflow-hidden border border-2">
-          <div class="overflow-hidden card-top-img-container rounded-2 pt-1 p-2">
-            <img src="./assets/images/start-your-new-career/data-scientist-cover.jpg" class="card-img-top p-2"
-              alt="...">
-          </div>
-
-          <div class="card-body">
-
-            <div class="d-flex gap-2 align-items-center">
-              <div>
-                <div class="little-logo-div1 rounded-2">
-                  <img src="./demo/card-section-images/unified-ca-override-ibm-logo-2.png" alt="twbs"
-                    class="little-logo-img">
-                </div>
-              </div>
-              <div>
-                <span class="gray-text">Google</span>
-              </div>
+        <!-- card-2 -->
+        <div class="col-lg-3 col-md-6 col-12 mt-3 main-card1">
+          <div class="card overflow-hidden border border-2">
+            <div class="overflow-hidden card-top-img-container rounded-2 pt-1 p-2">
+              <img src="./assets/images/start-your-new-career/data-scientist-cover.jpg" class="card-img-top p-2"
+                alt="...">
             </div>
 
-            <h3 class="fs-16px-txt mt-2">Google data analytics</h3>
+            <div class="card-body">
 
-
-            <div class="d-flex flex-column gap-2 mt-3">
-              <div class="d-flex gap-1 coursera-theme-color">
-                <i class="bi bi-file-earmark coursera-theme-color"></i>
+              <div class="d-flex gap-2 align-items-center">
                 <div>
-                  <a href="" class="text-decoration-none coursera-theme-color">Make progress toward a
-                    degree</a>
+                  <div class="little-logo-div1 rounded-2">
+                    <img src="./demo/card-section-images/unified-ca-override-ibm-logo-2.png" alt="twbs"
+                      class="little-logo-img">
+                  </div>
+                </div>
+                <div>
+                  <span class="gray-text">Google</span>
                 </div>
               </div>
 
-              <div class="d-flex flex-column gap-2">
-                <div class="d-flex gap-1 coursera-theme-color reviewsline">
-                  <img src="./assets/images/recently-viewed-products/star.svg" height="16" width="16" alt="">
-                  <p><span class="fw-semibold">4.8</span><span class="gray-text"> (145k reviews)</span></p>
+              <h3 class="fs-16px-txt mt-2">Google data analytics</h3>
+
+
+              <div class="d-flex flex-column gap-2 mt-3">
+                <div class="d-flex gap-1 coursera-theme-color">
+                  <i class="bi bi-file-earmark coursera-theme-color"></i>
+                  <div>
+                    <a href="" class="text-decoration-none coursera-theme-color">Make progress toward a
+                      degree</a>
+                  </div>
                 </div>
-                <p class="gray-text card-category">Professional Certificate</p>
-              </div>
 
-              <div class="d-flex gap-3">
-                <div>
-                  <i class="bi bi-hand-thumbs-up"></i>
-
+                <div class="d-flex flex-column gap-2">
+                  <div class="d-flex gap-1 coursera-theme-color reviewsline">
+                    <img src="./assets/images/recently-viewed-products/star.svg" height="16" width="16" alt="">
+                    <p><span class="fw-semibold">4.8</span><span class="gray-text"> (145k reviews)</span></p>
+                  </div>
+                  <p class="gray-text card-category">Professional Certificate</p>
                 </div>
-                <div class="thumbs-down">
-                  <i class="bi bi-hand-thumbs-down"></i>
 
+                <div class="d-flex gap-3">
+                  <div>
+                    <i class="bi bi-hand-thumbs-up"></i>
+
+                  </div>
+                  <div class="thumbs-down">
+                    <i class="bi bi-hand-thumbs-down"></i>
+
+                  </div>
                 </div>
               </div>
             </div>
           </div>
+
         </div>
 
-      </div>
-
-      <!-- card-3 -->
-      <div class="col-lg-3 col-md-6 col-12 mt-3 main-card1">
-        <div class="card overflow-hidden border border-2">
-          <div class="overflow-hidden card-top-img-container rounded-2 pt-1 p-2">
-            <img src="./assets/images/start-your-new-career/data-scientist-cover.jpg" class="card-img-top p-2"
-              alt="...">
-          </div>
-
-          <div class="card-body">
-
-            <div class="d-flex gap-2 align-items-center">
-              <div>
-                <div class="little-logo-div1 rounded-2">
-                  <img src="./demo/card-section-images/unified-ca-override-ibm-logo-2.png" alt="twbs"
-                    class="little-logo-img">
-                </div>
-              </div>
-              <div>
-                <span class="gray-text">Google</span>
-              </div>
+        <!-- card-3 -->
+        <div class="col-lg-3 col-md-6 col-12 mt-3 main-card1">
+          <div class="card overflow-hidden border border-2">
+            <div class="overflow-hidden card-top-img-container rounded-2 pt-1 p-2">
+              <img src="./assets/images/start-your-new-career/data-scientist-cover.jpg" class="card-img-top p-2"
+                alt="...">
             </div>
 
-            <h3 class="fs-16px-txt mt-2">Google data analytics</h3>
+            <div class="card-body">
 
-
-            <div class="d-flex flex-column gap-2 mt-3">
-              <div class="d-flex gap-1 coursera-theme-color">
-                <i class="bi bi-file-earmark coursera-theme-color"></i>
+              <div class="d-flex gap-2 align-items-center">
                 <div>
-                  <a href="" class="text-decoration-none coursera-theme-color">Make progress toward a
-                    degree</a>
+                  <div class="little-logo-div1 rounded-2">
+                    <img src="./demo/card-section-images/unified-ca-override-ibm-logo-2.png" alt="twbs"
+                      class="little-logo-img">
+                  </div>
+                </div>
+                <div>
+                  <span class="gray-text">Google</span>
                 </div>
               </div>
 
-              <div class="d-flex flex-column gap-2">
-                <div class="d-flex gap-1 coursera-theme-color reviewsline">
-                  <img src="./assets/images/recently-viewed-products/star.svg" height="16" width="16" alt="">
-                  <p><span class="fw-semibold">4.8</span><span class="gray-text"> (145k reviews)</span></p>
+              <h3 class="fs-16px-txt mt-2">Google data analytics</h3>
+
+
+              <div class="d-flex flex-column gap-2 mt-3">
+                <div class="d-flex gap-1 coursera-theme-color">
+                  <i class="bi bi-file-earmark coursera-theme-color"></i>
+                  <div>
+                    <a href="" class="text-decoration-none coursera-theme-color">Make progress toward a
+                      degree</a>
+                  </div>
                 </div>
-                <p class="gray-text card-category">Professional Certificate</p>
-              </div>
 
-              <div class="d-flex gap-3">
-                <div>
-                  <i class="bi bi-hand-thumbs-up"></i>
-
+                <div class="d-flex flex-column gap-2">
+                  <div class="d-flex gap-1 coursera-theme-color reviewsline">
+                    <img src="./assets/images/recently-viewed-products/star.svg" height="16" width="16" alt="">
+                    <p><span class="fw-semibold">4.8</span><span class="gray-text"> (145k reviews)</span></p>
+                  </div>
+                  <p class="gray-text card-category">Professional Certificate</p>
                 </div>
-                <div class="thumbs-down">
-                  <i class="bi bi-hand-thumbs-down"></i>
 
+                <div class="d-flex gap-3">
+                  <div>
+                    <i class="bi bi-hand-thumbs-up"></i>
+
+                  </div>
+                  <div class="thumbs-down">
+                    <i class="bi bi-hand-thumbs-down"></i>
+
+                  </div>
                 </div>
               </div>
             </div>
           </div>
+
         </div>
 
-      </div>
-
-      <!-- card-4 -->
-      <div class="col-lg-3 col-md-6 col-12 mt-3 main-card1">
-        <div class="card overflow-hidden border border-2">
-          <div class="overflow-hidden card-top-img-container rounded-2 pt-1 p-2">
-            <img src="./assets/images/start-your-new-career/data-scientist-cover.jpg" class="card-img-top p-2"
-              alt="...">
-          </div>
-
-          <div class="card-body">
-
-            <div class="d-flex gap-2 align-items-center">
-              <div>
-                <div class="little-logo-div1 rounded-2">
-                  <img src="./demo/card-section-images/unified-ca-override-ibm-logo-2.png" alt="twbs"
-                    class="little-logo-img">
-                </div>
-              </div>
-              <div>
-                <span class="gray-text">Google</span>
-              </div>
+        <!-- card-4 -->
+        <div class="col-lg-3 col-md-6 col-12 mt-3 main-card1">
+          <div class="card overflow-hidden border border-2">
+            <div class="overflow-hidden card-top-img-container rounded-2 pt-1 p-2">
+              <img src="./assets/images/start-your-new-career/data-scientist-cover.jpg" class="card-img-top p-2"
+                alt="...">
             </div>
 
-            <h3 class="fs-16px-txt mt-2">Google data analytics</h3>
+            <div class="card-body">
 
-
-            <div class="d-flex flex-column gap-2 mt-3">
-              <div class="d-flex gap-1 coursera-theme-color">
-                <i class="bi bi-file-earmark coursera-theme-color"></i>
+              <div class="d-flex gap-2 align-items-center">
                 <div>
-                  <a href="" class="text-decoration-none coursera-theme-color">Make progress toward a
-                    degree</a>
+                  <div class="little-logo-div1 rounded-2">
+                    <img src="./demo/card-section-images/unified-ca-override-ibm-logo-2.png" alt="twbs"
+                      class="little-logo-img">
+                  </div>
+                </div>
+                <div>
+                  <span class="gray-text">Google</span>
                 </div>
               </div>
 
-              <div class="d-flex flex-column gap-2">
-                <div class="d-flex gap-1 coursera-theme-color reviewsline">
-                  <img src="./assets/images/recently-viewed-products/star.svg" height="16" width="16" alt="">
-                  <p><span class="fw-semibold">4.8</span><span class="gray-text"> (145k reviews)</span></p>
+              <h3 class="fs-16px-txt mt-2">Google data analytics</h3>
+
+
+              <div class="d-flex flex-column gap-2 mt-3">
+                <div class="d-flex gap-1 coursera-theme-color">
+                  <i class="bi bi-file-earmark coursera-theme-color"></i>
+                  <div>
+                    <a href="" class="text-decoration-none coursera-theme-color">Make progress toward a
+                      degree</a>
+                  </div>
                 </div>
-                <p class="gray-text card-category">Professional Certificate</p>
-              </div>
 
-              <div class="d-flex gap-3">
-                <div>
-                  <i class="bi bi-hand-thumbs-up"></i>
-
+                <div class="d-flex flex-column gap-2">
+                  <div class="d-flex gap-1 coursera-theme-color reviewsline">
+                    <img src="./assets/images/recently-viewed-products/star.svg" height="16" width="16" alt="">
+                    <p><span class="fw-semibold">4.8</span><span class="gray-text"> (145k reviews)</span></p>
+                  </div>
+                  <p class="gray-text card-category">Professional Certificate</p>
                 </div>
-                <div class="thumbs-down">
-                  <i class="bi bi-hand-thumbs-down"></i>
 
+                <div class="d-flex gap-3">
+                  <div>
+                    <i class="bi bi-hand-thumbs-up"></i>
+
+                  </div>
+                  <div class="thumbs-down">
+                    <i class="bi bi-hand-thumbs-down"></i>
+
+                  </div>
                 </div>
               </div>
             </div>
           </div>
+
         </div>
 
+
       </div>
+      <div class="mt-3">
+        <button type="button" class="btn btn-outline-primary border-1 fw-semibold coursera-theme-color">Show 8
+          more</button>
+      </div>
+  </section>
 
 
-    </div>
-    <div class="mt-3">
-      <button type="button" class="btn btn-outline-primary border-1 fw-semibold coursera-theme-color">Show 8
-        more</button>
-    </div>
-</section>
+  <p class="container fs-14px-txt">¹ Median salary and job opening data are sourced from United States Lightcast™ Job
+    Postings Report. Data for job roles relevant to featured programs (7/1/2022 - 6/30/2023)
 
-
-<p class="container fs-14px-txt">¹ Median salary and job opening data are sourced from United States Lightcast™ Job Postings Report. Data for job roles relevant to featured programs (7/1/2022 - 6/30/2023)
-
-</p>
+  </p>
 
   <hr>
   <!--------------------------------- footer section ----------------------------------->
