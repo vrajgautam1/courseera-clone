@@ -103,6 +103,62 @@ i{
 }
 #acrrording{
     display: flex;
+    justify-content: space-around;
+}
+#infra{
+    border: 1px solid #a9a8a8;
+    border-radius: 10px;
+    padding: 10px !important;
+    width: 60%;
+}
+#accordionFlushExample{
+    border-radius: 10px;
+    padding: 10px !important;
+    width: 60%;
+}
+#infra-1{
+    border: 1px solid #b0adad;
+    border-radius: 10px;
+    padding: 10px !important;
+    width: 30%;
+}
+#question-s{    
+    border-radius: 10px;
+    padding: 10px !important;
+    width: 30%;
+}
+#cloud{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+#card-in{
+    border: none !important;
+}
+#a-menu{
+    display: flex;
+    justify-content: space-between;
+}
+#a-menu1{
+    display: flex;
+    justify-content: space-between;
+}
+#a-menu2{
+    display: flex;
+    justify-content: space-between;
+}
+#controler{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.professors{
+    display: flex;
+    align-items: center;
+}
+#faq{
+    display: flex;
+    justify-content: space-around;
 }
 @media(max-width:600px){
     #hero{
@@ -118,5 +174,41 @@ i{
     #content-box{
         margin-top: 10px;
        width: 100%;
+    }
+    #list{
+        margin-top: 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    #img-content{
+        margin-top: 90px !important;
+        display: flex;
+        height: 500px !important;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        border: none !important;
+        height: 100px;
+    }
+    #acrrording{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    #a-menu{
+        width: 190% !important;
+        display: flex;
+        justify-content: space-between;
+    }
+    #a-menu1{
+        width: 190% !important;
+        display: flex;
+        justify-content: space-between;
+    }
+    #a-menu2{
+        width: 190% !important;
+        display: flex;
+        justify-content: space-between;
     }
 }
