@@ -194,7 +194,7 @@
 
 @media (max-width: 576px) {
   .navbar-brand img {
-    border: 1px solid #000;
+    /* border: 1px solid #000; */
     height: 16px !important; /* Adjust for smaller screens */
   }
 
