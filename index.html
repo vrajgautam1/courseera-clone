@@ -53,61 +53,93 @@
     <!------------------------------------ 1st black navbar end -------------------------->
 
     <!----------------------------------- 2nd main navbar START ------------------------------->
-    <nav class="navbar navbar-expand-lg px-3">
+    <nav class="navbar navbar-expand-lg" aria-label="Offcanvas navbar large">
       <div class="container-fluid">
 
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar2"
+              aria-controls="offcanvasNavbar2" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+          </button>
 
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
+          <a class="navbar-brand" href="#" target="_blank"><img height="16px"
+                  src="./assets/images/header/courseralogo.svg"></a>
+          </a>
 
-        <a class="navbar-brand" href="#" target="_blank"><img height="16px"
-            src="./assets/images/header/courseralogo.svg"></a>
-        </a>
-
-        <div class="search-icon d-block d-lg-none ms-auto">
-          <i class="fas fa-search"></i>
-        </div>
+          <div class="search-icon d-block d-lg-none ms-auto">
+              <i class="fas fa-search"></i>
+          </div>
 
 
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0 d-flex justify-content-between w-100">
-            <li class="nav-item d-flex align-items-center">
-              <button type="button"
-                class="btn btn-outline-primary me-2 py-1 fw-semibold explorebtn rounded-1 d-flex align-items-center">Explore<i
-                  class="bi bi-chevron-down text-primary ms-2"></i>
-              </button>
+          <div class="offcanvas offcanvas-end text-bg-dark d-lg-none" tabindex="-1" id="offcanvasNavbar2"
+              aria-labelledby="offcanvasNavbar2Label">
 
-              <form class="d-flex align-items-center search-bar" role="search">
-                <div class="icon-circle">
-                  <i class="fa-solid fa-magnifying-glass"></i>
-                </div>
-                <input class="form-control ms-2 rounded-pill custom-placeholder large-search-box" type="search"
-                  placeholder="What do you want to learn?" aria-label="Search">
-              </form>
-            </li>
-            <li class="nav-item d-flex align-items-center gap-3">
-              <a class="nav-link d-flex align-items-center" aria-current="page" href="#">
-                <i class="bi bi-globe fs-4"></i>
-                <span class="ms-2">English</span>
-                <i class="bi bi-chevron-down fs-5 ms-2"></i>
-              </a>
-              <a class="nav-link" href="#">
-                <i class="bi bi-bell position-relative fs-4">
-                  <span
-                    class="position-absolute top-25 start-100 translate-middle p-2 bg-danger border border-light rounded-circle">
-                  </span>
-                </i>
-              </a>
-              <div class="icon-circle1 rounded-circle">
-                <span class="v-text text-light">V</span>
+              <div class="offcanvas-header">
+                  <h5 class="offcanvas-title" id="offcanvasNavbar2Label"><img height="16px"
+                      src="./assets/images/header/courseralogo.svg"></h5>
+
+                  <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                      aria-label="Close"></button>
               </div>
-            </li>
-          </ul>
-        </div>
+              <div class="offcanvas-body ">
+                  <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                      <li class="nav-item">
+                          <a class="nav-link active" aria-current="page" href="#">Home</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="#">Link</a>
+                      </li>
+                      <li class="nav-item dropdown">
+                          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                              aria-expanded="false">
+                              Dropdown
+                          </a>
+
+                      </li>
+                  </ul>
+                  <form class="d-flex mt-3 mt-lg-0" role="search">
+                      <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                      <button class="btn btn-outline-success" type="submit">Search</button>
+                  </form>
+              </div>
+          </div>
+
+          <div class="collapse navbar-collapse d-lg-block" id="navbarSupportedContent" >
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0 d-flex justify-content-between w-100">
+                <li class="nav-item d-flex align-items-center">
+                  <button type="button"
+                    class="btn btn-outline-primary me-2 py-1 fw-semibold explorebtn rounded-1 d-flex align-items-center">Explore<i
+                      class="bi bi-chevron-down text-primary ms-2"></i>
+                  </button>
+    
+                  <form class="d-flex align-items-center search-bar" role="search">
+                    <div class="icon-circle">
+                      <i class="fa-solid fa-magnifying-glass"></i>
+                    </div>
+                    <input class="form-control ms-2 rounded-pill custom-placeholder large-search-box" type="search"
+                      placeholder="What do you want to learn?" aria-label="Search">
+                  </form>
+                </li>
+                <li class="nav-item d-flex align-items-center gap-3">
+                  <a class="nav-link d-flex align-items-center" aria-current="page" href="#">
+                    <i class="bi bi-globe fs-4"></i>
+                    <span class="ms-2">English</span>
+                    <i class="bi bi-chevron-down fs-5 ms-2"></i>
+                  </a>
+                  <a class="nav-link" href="#">
+                    <i class="bi bi-bell position-relative fs-4">
+                      <span
+                        class="position-absolute top-25 start-100 translate-middle p-2 bg-danger border border-light rounded-circle">
+                      </span>
+                    </i>
+                  </a>
+                  <div class="icon-circle1 rounded-circle">
+                    <span class="v-text text-light">V</span>
+                  </div>
+                </li>
+              </ul>
+            </div>
       </div>
-    </nav>
+  </nav>
     <!----------------------------------- 2nd main navbar END ------------------------------->
 
     <!-- 3rd navbar start -->
@@ -115,12 +147,12 @@
     <ul class=" container list-unstyled me-auto mb-2 mb-lg-0 d-flex gap-5 mt-3">
 
       <li class="nav-item">
-        <a class="nav-link fw-semibold pg-indicatornav-links text-secondary-emphasis" aria-current="page"
-          href="#">Home</a>
+        <a class="nav-link fw-semibold pg-indicatornav-links text-secondary" aria-current="page"
+          href="./index.html">Home</a>
       </li>
 
       <li class="nav-item">
-        <a class="nav-link fw-semibold pg-indicatornav-links text-secondary-emphasis" href="#">My Learning</a>
+        <a class="nav-link fw-semibold pg-indicatornav-links text-secondary-emphasis" href="./demo-2/my-learning.html">My Learning</a>
       </li>
 
       <li class="nav-item">
@@ -128,10 +160,11 @@
       </li>
 
       <li class="nav-item">
-        <a class="nav-link fw-semibold pg-indicatornav-links text-secondary-emphasis" href="#">Find Your New Career</a>
+        <a class="nav-link fw-semibold pg-indicatornav-links text-secondary-emphasis" href="./demo/jainam.html">Find Your New Career</a>
       </li>
 
     </ul>
+  
     <hr>
   </section>
   <!----------------------------------- navbar section end ------------------------------->
@@ -139,7 +172,7 @@
 
 
 
-  <p class="container text-end source-sans-font-regular-text text-secondary-emphasis">Your goal is to <span
+  <p class="container text-end source-sans-font-regular-text text-secondary-emphasis mt-4">Your goal is to <span
       class="fw-bold">explore topics outside of work as a Student</span>
   </p>
 
@@ -3674,6 +3707,7 @@
 <p class="container fs-14px-txt">¹ Median salary and job opening data are sourced from United States Lightcast™ Job Postings Report. Data for job roles relevant to featured programs (7/1/2022 - 6/30/2023)
 
 </p>
+
   <hr>
   <!--------------------------------- footer section ----------------------------------->
   <section id="footer">

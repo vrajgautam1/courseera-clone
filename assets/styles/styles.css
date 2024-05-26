@@ -194,7 +194,7 @@
 
 @media (max-width: 576px) {
   .navbar-brand img {
-    border: 1px solid #000;
+    /* border: 1px solid #000; */
     height: 16px !important; /* Adjust for smaller screens */
   }
 
@@ -230,6 +230,20 @@
 .pg-indicatornav-links {
   font-family: "Source Sans 3", "sans-serif";
 }
+
+/* .nav-item .nav-link {
+  position: relative;
+  padding-bottom: 5px;
+}
+.nav-item .nav-link.active::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background-color: #0056d2;
+} */
 
 /* Find-your-new-career-section */
 
