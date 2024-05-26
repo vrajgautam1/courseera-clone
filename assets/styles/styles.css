@@ -41,6 +41,10 @@
 }
 
 
+.find-your-new-career {
+  margin-top: 10% !important;
+}
+
 /* 1st dark bg navbar */
 
 #black-navbar {
@@ -428,3 +432,4 @@
 #lower-footer>.link-body-emphasis {
   text-decoration: none !important;
 }
+

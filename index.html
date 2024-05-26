@@ -28,7 +28,7 @@
 <body>
 
   <!--------------------------------- navbar section ----------------------------------->
-  <section id="navbar">
+  <section id="navbar" class="fixed-top bg-light">
     <!---------------------------------- 1st black navbar -------------------------------->
     <nav class="navbar navbar-expand-lg" id="black-navbar">
       <div class="container-fluid">
@@ -109,8 +109,8 @@
               <button data-track="true" data-track-app="unified_career_academy"
                 data-track-page="consumer_career_academy" data-track-action="click"
                 data-track-component="explore_button" data-e2e="megamenu-explore-button"
-                class="btn btn-light border border-1 border-primary px-4 explore-button" aria-expanded="false" aria-haspopup="true"
-                aria-label="Explore our catalog" type="button">
+                class="btn btn-light border border-1 border-primary px-4 explore-button" aria-expanded="false"
+                aria-haspopup="true" aria-label="Explore our catalog" type="button">
                 <span class="text-primary fw-bold fs-6">Explore</span>
 
                 <svg aria-hidden="true" fill="none" focusable="false" height="12" viewBox="0 0 16 16" width="12">
@@ -171,7 +171,8 @@
       </li>
 
       <li class="nav-item">
-        <a class="nav-link fw-semibold pg-indicatornav-links text-secondary-emphasis" href="#">Online Degress</a>
+        <a class="nav-link fw-semibold pg-indicatornav-links text-secondary-emphasis"
+          href="./bhavini-dev/degree.html">Online Degress</a>
       </li>
 
       <li class="nav-item">
@@ -193,8 +194,8 @@
   </p>
 
   <!-- find your new career -->
-  <section id="find-your-new-career source-sans-font-regular-text">
-    <div class="container">
+  <section id="find-your-new-career source-sans-font-regular-text mt-5">
+    <div class="container find-your-new-career ">
       <h2 class="ps-2 fw-normal">Find Your New Career</h2>
       <div class="d-flex flex-wrap gap-2 ps-2">
         <button type="button" class="btn btn-outline-dark list-btn rounded-pill fw-semibold" style="font-size:14px;">All
@@ -444,50 +445,51 @@
       <div class="row align-item-end gx-4">
         <!-- card-1 -->
         <div class="col-lg-3 col-md-6 col-12 mt-3 main-card1">
-          <div class="card overflow-hidden border border-2">
-            <div class="overflow-hidden card-top-img-container rounded-2 pt-1 p-2">
-              <img src="./assets/images/start-your-new-career/data-scientist-cover.jpg" class="card-img-top p-2"
-                alt="...">
-            </div>
-
-            <div class="card-body">
-
-              <div class="d-flex gap-2 align-items-center">
-                <div>
-                  <div class="little-logo-div1 rounded-2">
-                    <img src="./demo/card-section-images/unified-ca-override-ibm-logo-2.png" alt="twbs"
-                      class="little-logo-img">
-                  </div>
-                </div>
-                <div>
-                  <span class="gray-text">Google</span>
-                </div>
+          <a href="./bhavini-dev/coursee.html" target="_self">
+            <div class="card overflow-hidden border border-2">
+              <div class="overflow-hidden card-top-img-container rounded-2 pt-1 p-2">
+                <img src="./assets/images/start-your-new-career/data-scientist-cover.jpg" class="card-img-top p-2"
+                  alt="...">
               </div>
 
-              <h3 class="fs-16px-txt mt-2">Google data analytics</h3>
+              <div class="card-body">
 
-
-              <div class="d-flex flex-column gap-2 mt-3">
-                <div class="d-flex gap-1 coursera-theme-color">
-                  <i class="bi bi-file-earmark coursera-theme-color"></i>
+                <div class="d-flex gap-2 align-items-center">
                   <div>
-                    <a href="" class="text-decoration-none coursera-theme-color">Make progress toward a
-                      degree</a>
+                    <div class="little-logo-div1 rounded-2">
+                      <img src="./demo/card-section-images/unified-ca-override-ibm-logo-2.png" alt="twbs"
+                        class="little-logo-img">
+                    </div>
+                  </div>
+                  <div>
+                    <span class="gray-text">Google</span>
                   </div>
                 </div>
 
-                <div class="d-flex flex-column gap-2">
-                  <div class="d-flex gap-1 coursera-theme-color reviewsline">
-                    <img src="./assets/images/recently-viewed-products/star.svg" height="16" width="16" alt="">
-                    <p><span class="fw-semibold">4.8</span><span class="gray-text"> (145k reviews)</span></p>
+                <h3 class="fs-16px-txt mt-2">Google data analytics</h3>
+
+
+                <div class="d-flex flex-column gap-2 mt-3">
+                  <div class="d-flex gap-1 coursera-theme-color">
+                    <i class="bi bi-file-earmark coursera-theme-color"></i>
+                    <div>
+                      <a href="#" class="text-decoration-none coursera-theme-color">Make progress toward a
+                        degree</a>
+                    </div>
                   </div>
 
-                  <p class="gray-text card-category">Professional Certificate</p>
+                  <div class="d-flex flex-column gap-2">
+                    <div class="d-flex gap-1 coursera-theme-color reviewsline">
+                      <img src="./assets/images/recently-viewed-products/star.svg" height="16" width="16" alt="">
+                      <p><span class="fw-semibold">4.8</span><span class="gray-text"> (145k reviews)</span></p>
+                    </div>
+
+                    <p class="gray-text card-category">Professional Certificate</p>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-
+          </a>
         </div>
 
         <!-- card-2 -->
@@ -3832,6 +3834,7 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
     integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
     crossorigin="anonymous"></script>
+
 </body>
 
 </html>
