@@ -7,6 +7,42 @@
   margin: 0;
   padding: 0;
   color: #000;
+  font-family: "Source Sans 3", sans-serif !important;
+}
+
+.source-sans-font-regular-text {
+  font-family: "Source Sans 3", sans-serif !important;
+}
+
+.coursera-theme-color {
+  color: #0056d2 !important;
+  ;
+}
+
+.coursera-theme-bg {
+  color: #0056d2 !important;
+}
+
+.featured-btn1 {
+  width: 32%;
+  padding: 3px !important;
+}
+
+.gray-text {
+  color: rgb(99, 99, 99);
+}
+
+.fs-16px-txt {
+  font-size: 16px !important;
+}
+
+.fs-14px-txt {
+  font-size: 14px !important;
+}
+
+
+.find-your-new-career {
+  margin-top: 10% !important;
 }
 
 /* 1st dark bg navbar */
@@ -33,13 +69,13 @@
 /*------------------------------------ Main navbar------------------------------------ */
 
 .navbar-toggler {
-    padding: 0px !important;
-    border: none !important;    
+  padding: 0px !important;
+  border: none !important;
 }
 
-.btn {
+.explorebtn {
   font-family: "Source Sans 3", sans-serif !important;
-  border: 1px solid #0056d2 !important;  
+  border: 1px solid #0056d2 !important;
 }
 
 .bi-chevron-down {
@@ -48,159 +84,337 @@
 
 /* search bar */
 .search-bar {
-    position: relative;
-  }
-  
-  .search-bar input[type="search"] {
-     /* Adjust based on icon size and padding */
-  }
+  position: relative;
+}
 
-  
-  .custom-placeholder::placeholder {
-    font-size: 14px; /* Change to your desired font size */
-    font-family: 'Source Sans 3','Arial', sans-serif; /* Change to your desired font family */
-  }
+/* .search-bar input[type="search"] {
+  /* Adjust based on icon size and padding */
 
-  #navbarSupportedContent{
-    width:30%;
-  }
+.custom-placeholder::placeholder {
+  font-size: 14px;
+  /* Change to your desired font size */
+  font-family: "Source Sans 3", "Arial", sans-serif;
+  /* Change to your desired font family */
+}
 
-  .search-bar {
-    position: relative;
-    width: 500px;
-  }
-  .large-search-box {
-    width: 500px;
-    padding-left: 3rem; /* Adjust based on icon size and padding */
-    font-size: 14px;
-  }
-  .icon-circle {
-    position: absolute;
-    right: 5px; /* Adjust based on desired position */
-    top: 50%;
-    transform: translateY(-50%);
-    background-color: #0056d2; /* Bootstrap primary color */
-    border-radius: 50%;
-    width: 30px; /* Adjust based on desired size */
-    height: 30px; /* Adjust based on desired size */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  .icon-circle i {
-    color: white;
-    font-size: 16px; /* Adjust based on desired icon size */
-  }
- 
-  .icon-circle1 {
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 36px;
-    width: 36px;
-    background-color: #00347d;
-    color: white; /* Ensure the text color contrasts with the background */
-    font-size: 18px; /* Adjust font size as needed */
-    border-radius: 50%;
-  }
-  
-  .v-text {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
-    width: 100%;
-    text-align: center;
-  }
+#navbarSupportedContent {
+  width: 30%;
+}
+
+.search-bar {
+  position: relative;
+  width: 500px;
+}
+
+.large-search-box {
+  width: 500px;
+  padding-left: 3rem;
+  /* Adjust based on icon size and padding */
+  font-size: 14px;
+}
+
+.icon-circle {
+  position: absolute;
+  right: 5px;
+  /* Adjust based on desired position */
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #0056d2;
+  /* Bootstrap primary color */
+  border-radius: 50%;
+  width: 30px;
+  /* Adjust based on desired size */
+  height: 30px;
+  /* Adjust based on desired size */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon-circle i {
+  color: white;
+  font-size: 16px;
+  /* Adjust based on desired icon size */
+}
+
+.icon-circle1 {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 36px;
+  width: 36px;
+  background-color: #00347d;
+  color: white;
+  /* Ensure the text color contrasts with the background */
+  font-size: 18px;
+  /* Adjust font size as needed */
+  border-radius: 50%;
+}
+
+.v-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+}
+
+.avatar-initial {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #6c757d;
+  color: white;
+  text-align: center;
+  line-height: 40px;
+  font-size: 18px;
+}
+
+.dropdown-icon {
+  margin-left: 8px;
+}
 
 /* .nav-item>.btn{
     padding-top: 0.75rem!important;
     padding-bottom: 0.75rem!important;
 } */
-  /* //////////////////////  */
-  
-  @media (max-width: 992px) {
-    .navbar-brand {
-      flex: 1;
-      text-align: center;
-    }
+/* //////////////////////  */
 
-    .navbar-toggler {
-        padding: 0px !important;
-        border: none !important;    
-    }
-
-    .navbar-toggler {
-      order: -1;
-    }
-
-    #navbarSupportedContent {
-      flex-basis: 100%;
-      justify-content: space-between;
-    }
-
-    .search-bar {
-      width: auto;
-      order: 1;
-      margin-left: auto;
-    }
-
-    .icon-circle {
-      position: static;
-      background: none;
-      color: inherit;
-    }
-
-    .large-search-box {
-      width: auto;
-    }
-
-    .nav-item.d-flex {
-      flex-direction: column;
-      align-items: flex-start;
-    }
+@media (max-width: 992px) {
+  .navbar-brand {
+    flex: 1;
+    text-align: center;
   }
 
-  @media (max-width: 576px) {
-    .navbar-brand img {
-      border: 1px solid #000;
-      height: 16px !important; /* Adjust for smaller screens */
-    }
-
-    .navbar-toggler {
-      order: -1;
-    }
-
-    .search-bar {
-      display: none;
-    }
-
-    .search-icon {
-      display: block;
-    }
-
-    .search-icon-mobile {
-      display: none;
-    }
-
-    .navbar-toggler {
-        padding: 0px !important;
-        border: none !important;    
-    }
+  .navbar-toggler {
+    padding: 0px !important;
+    border: none !important;
   }
 
-  /* Additional adjustments for the navbar at smaller sizes */
+  .navbar-toggler {
+    order: -1;
+  }
+
+  #navbarSupportedContent {
+    flex-basis: 100%;
+    justify-content: space-between;
+  }
+
+  .search-bar {
+    width: auto;
+    order: 1;
+    margin-left: auto;
+  }
+
+  .icon-circle {
+    position: static;
+    background: none;
+    color: inherit;
+  }
+
+  .large-search-box {
+    width: auto;
+  }
+
+  .nav-item.d-flex {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+@media (max-width: 576px) {
+  .navbar-brand img {
+    /* border: 1px solid #000; */
+    height: 16px !important;
+    /* Adjust for smaller screens */
+  }
+
+  .navbar-toggler {
+    order: -1;
+  }
+
+  .search-bar {
+    display: none;
+  }
+
+  .search-icon {
+    display: block;
+  }
+
   .search-icon-mobile {
     display: none;
   }
 
-  /* 3rd navbar */
-
-  .pg-indicatornav-links{
-    font-family: "Source Sans 3", 'sans-serif';
+  .navbar-toggler {
+    padding: 0px !important;
+    border: none !important;
   }
+}
 
+/* Additional adjustments for the navbar at smaller sizes */
+.search-icon-mobile {
+  display: none;
+}
+
+/* 3rd navbar */
+
+.pg-indicatornav-links {
+  font-family: "Source Sans 3", "sans-serif";
+}
+
+/* .nav-item .nav-link {
+  position: relative;
+  padding-bottom: 5px;
+}
+.nav-item .nav-link.active::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background-color: #0056d2;
+} */
+
+/* Find-your-new-career-section */
+
+.card-title {
+  font-size: 20px !important;
+}
+
+.card-text,
+.great-if-you-like,
+.jobs-n-salary {
+  font-size: 16px !important;
+  color: rgb(99, 99, 99);
+}
+
+.great-if-you-like {
+  font-size: 14px !important;
+}
+
+.gt-if-u-like {
+  color: #000;
+}
+
+.little-logo-div {
+  height: 24px !important;
+  width: 24px !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2px;
+  /* Adjust padding if needed */
+  box-sizing: border-box;
+  border: 1px solid rgb(99, 99, 99);
+}
+
+.little-logo-div1 {
+  height: 24px !important;
+  width: 24px !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0px;
+  /* Adjust padding if needed */
+  box-sizing: border-box;
+  border: 1px solid rgb(99, 99, 99);
+}
+
+.little-logo-img {
+  max-height: 100%;
+  max-width: 100%;
+  border-radius: 0.25rem;
+  /* Adjust border radius if needed */
+  padding: 2px;
+  padding-bottom: 0 !important;
+  /* Adjust padding if needed */
+  /* Adjust border style if needed */
+}
+
+.card-img-top {
+  border-radius: 15px !important;
+  transform: scale(1.1);
+}
+
+.card-top-img-container {
+  margin-top: -3px !important;
+  padding-bottom: 0 !important;
+}
+
+/* reecently viewed courses */
+
+.reviewsline {
+  height: 18px !important;
+}
+
+.card-category {
+  padding-bottom: 0px !important;
+  margin-bottom: 0px !important;
+}
+
+.section-heading {
+  margin-bottom: 0px !important;
+}
+
+/* most popular courses */
+
+.thumbs-down i {
+  transform: scaleX(-1) !important;
+}
+
+/* most popular certificates */
+.main-card1 {
+  transition: transform 0.5s ease;
+}
+
+.main-card1:hover {
+  transform: scale(1.05) !important;
+  font-weight: 500;
+
+}
+
+/* earn your degree  */
+
+.ellipsis {
+  display: inline-block;
+  /* Allows setting width and height */
+  width: 200px;
+  /* Set the desired width */
+  overflow: hidden;
+  /* Hide the overflowing content */
+  text-overflow: ellipsis;
+  /* Show ellipsis for overflow */
+  white-space: nowrap;
+  /* Prevent text from wrapping */
+  /* Optional: Add a border for visibility */
+}
+
+/* get started with free courses */
+.badge {
+  position: absolute;
+  top: 20px;
+  left: 30px;
+}
+
+/* featured */
+.featuredheading {
+  font-size: 20px !important;
+}
+
+/* categories */
+
+.dark-bg {
+  background-color: #00255D !important;
+}
+
+/* guided-projects */
+.guided-project-card {
+  height: 100% !important;
+}
 
 /* footer section */
 .footer-links,
@@ -215,6 +429,7 @@
   font-family: "Source Sans 3", sans-serif;
 }
 
-#lower-footer > .link-body-emphasis {
+#lower-footer>.link-body-emphasis {
   text-decoration: none !important;
 }
+

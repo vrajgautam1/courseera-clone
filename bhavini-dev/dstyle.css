@@ -7,124 +7,192 @@
     box-sizing: border-box;
 }
 
+#main {
+    height: 900px !important;
+}
+
 #hero {
-    background-color: midnightblue;
-    height: 200px;
+    height: 500px !important;
+    background-color: rgb(214, 236, 244) !important;
+    display: flex;
+    justify-content: space-around;
 }
 
-#degree {
-    margin-left: 30px !important;
-    color: white;
+#content {
+    height: 900px;
+    margin-left: 40px !important;
 }
 
-#navigation {
-    background-color: transparent !important;
+#linked {
+    font-size: 1.5rem;
 }
 
-.nav-link {
-    color: black !important;
-    margin-left: 20px !important;
+#google-img {
+    margin-top: 80px !important;
 }
 
-input {
-    height: 20px !important;
-    width: 20px !important;
-    margin-right: 10px !important;
+#active {
+    color: rgb(35, 25, 168) !important;
+    background-color: rgb(211, 207, 207) !important;
 }
 
-#filtter {
-    background: transparent !important;
+#anchor {
+    color: #000;
 }
 
-.card:hover {
+#secondary {
+    height: 30px;
+    margin: 5px !important;
+    background-color: rgb(214, 211, 211);
+    color: #000;
+}
+
+small {
+    font-size: 12px !important;
+    display: flex;
+    align-items: center;
+}
+
+#box {
+    width: 400px;
+    height: 400px;
+    background-color: white;
+}
+
+#box-item {
+    height: 400px;
+    width: 400px !important;
     box-shadow: 10px 20px 20px rgb(177, 175, 175), -10px -10px 20px rgb(177, 175, 175),
         10px -10px 20px rgb(177, 175, 175),
         -10px 10px 20px rgb(177, 175, 175);
 }
 
-#card-img {
-    height: 90px;
-    width: 100px;
+i {
+    color: rgb(7, 2, 113) !important;
 }
 
-#card-img1 {
-    height: 90px;
-    width: 250px;
+#navigation {
+    margin-top: 50px !important;
 }
 
-#card-img2 {
+#course {
+    text-decoration: none !important;
+}
+
+#google-c {
+    color: #000 !important;
+}
+
+#enroll {
+    padding: 10px;
+}
+
+#master {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#l-business {
+    text-decoration: none;
+}
+
+#list {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#img-content {
+    margin-top: 90px !important;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border: 1px solid #757474;
     height: 100px;
-    width: 120px;
 }
 
-#card-img3 {
-    height: 100px;
-    width: 300px;
+#know-more {
+    margin-top: 50px;
+    margin-bottom: 50px !important;
 }
 
-#card-img4 {
-    height: 120px;
-    width: 300px;
+#read {
+    color: blue;
+    cursor: pointer !important;
 }
 
-.pagination {
-    margin: 10px !important;
+#read-more {
+    color: blue;
+    cursor: pointer !important;
 }
 
-.page-link {
-    font-size: 1rem !important;
+#acrrording {
+    display: flex;
+    justify-content: space-around;
+}
+
+#infra {
+    border: 1px solid #a9a8a8;
+    border-radius: 10px;
+    padding: 10px !important;
+    width: 60%;
+}
+
+#accordionFlushExample {
+    border-radius: 10px;
+    padding: 10px !important;
+    width: 60%;
+}
+
+#infra-1 {
+    border: 1px solid #b0adad;
+    border-radius: 10px;
+    padding: 10px !important;
+    width: 30%;
+}
+
+#question-s {
+    border-radius: 10px;
+    padding: 10px !important;
+    width: 30%;
+}
+
+#cloud {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#card-in {
     border: none !important;
 }
 
-#first-class {
-    background-color: rgb(3, 3, 68) !important;
-}
-
-.active {
-    border-radius: 5px !important;
-    margin-left: 5px !important;
-}
-
-#course-card {
-    height: 100px;
-    display: flex !important;
-    align-items: center !important;
-    background: rgb(244, 244, 247);
-    background: liner-gradient(225deg, rgba(244, 244, 247, 1) 0%, rgba(219, 229, 234, 1) 22%, rgba(228, 232, 234, 1) 45%, rgba(236, 236, 244, 1) 96%, rgba(241, 241, 244, 1) 99%);
-}
-
-#course-card1 {
-    height: 100px;
-    display: flex !important;
-    align-items: center !important;
-    background: rgb(244, 244, 247);
-    background: liner-gradient(225deg, rgba(244, 244, 247, 1) 0%, rgba(219, 229, 234, 1) 22%, rgba(228, 232, 234, 1) 45%, rgba(236, 236, 244, 1) 96%, rgba(241, 241, 244, 1) 99%);
-}
-
-#d-name {
-    margin-top: 20px !important;
-}
-
-#degree-card {
-    height: 100px;
+#a-menu {
     display: flex;
-    justify-content: center;
-    align-items: center !important;
-    background: rgb(244, 244, 247);
-    background: liner-gradient(225deg, rgba(244, 244, 247, 1) 0%, rgba(219, 229, 234, 1) 22%, rgba(228, 232, 234, 1) 45%, rgba(236, 236, 244, 1) 96%, rgba(241, 241, 244, 1) 99%);
+    justify-content: space-between;
 }
 
-#card-detail {
-    height: 240px;
-    width: 330px;
+#a-menu1 {
+    display: flex;
+    justify-content: space-between;
 }
 
-#card-image {
-    height: 250px;
+#a-menu2 {
+    display: flex;
+    justify-content: space-between;
+}
+
+#controler {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 
 .professors {
     display: flex;
+    align-items: center;
 }
 
 #faq {
@@ -132,36 +200,67 @@ input {
     justify-content: space-around;
 }
 
-i {
-    font-size: 1.5rem;
-    margin: 10px;
-}
-
-#question-s {
-    padding: 10px;
-}
-
-#accordionFlushExample {
-    padding: 10px;
-}
-
 @media(max-width:600px) {
-    #faq {
+    #hero {
         display: flex;
         flex-direction: column;
     }
 
-    #question-s {
-        margin-left: 20px;
-        width: 80% !important;
+    #content {
+        width: 100%;
     }
 
-    #accordionFlushExample {
-        margin-left: 20px;
-        width: 80% !important;
+    #google-img {
+        margin-top: 5px !important;
+    }
+
+    #content-box {
+        margin-top: 10px;
+        width: 100%;
+    }
+
+    #list {
+        margin-top: 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    #img-content {
+        margin-top: 90px !important;
+        display: flex;
+        height: 500px !important;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        border: none !important;
+        height: 100px;
+    }
+
+    #acrrording {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    #a-menu {
+        width: 190% !important;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #a-menu1 {
+        width: 190% !important;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #a-menu2 {
+        width: 190% !important;
+        display: flex;
+        justify-content: space-between;
     }
 }
-
 
 .navbar-toggler {
     padding: 0px !important;
@@ -202,7 +301,7 @@ i {
     width: 500px;
 }
 
-#serchbar{
+#serchbar {
     position: relative;
     width: 450px !important;
     font-size: 14px;

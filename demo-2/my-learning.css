@@ -1,0 +1,87 @@
+.w-25 {
+    width: 200px !important;
+}
+
+.w-50 {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+
+/* Custom CSS */
+@media (max-width: 991px) {
+
+    /* For medium screens and below */
+    .fw-boald {
+        font-weight: bold !important;
+    }
+
+    .card {
+        flex-direction: column !important;
+    }
+
+    .card-body {
+        text-align: center !important;
+    }
+
+    .user-name {
+        text-align: center !important;
+    }
+}
+
+@media (max-width: 767px) {
+
+    /* For small screens */
+    .fw-boald {
+        font-weight: bold !important;
+    }
+
+    .card {
+        flex-direction: column !important;
+    }
+
+    .card-body {
+        text-align: center !important;
+    }
+
+    .user-name {
+        text-align: center !important;
+    }
+}
+
+/* styles.css */
+
+#loader {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#loader::before {
+    content: "";
+    width: 40px;
+    height: 40px;
+    border: 4px solid #f3f3f3;
+    border-top: 4px solid #3498db;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+#content {
+    display: none;
+}
