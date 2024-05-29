@@ -218,6 +218,19 @@ i {
         margin-top: 10px;
         width: 100%;
     }
+    #infra {
+        border: 1px solid #a9a8a8;
+        border-radius: 10px;
+        padding: 10px !important;
+        width: 100% !important;
+    }
+    #infra-1 {
+        border: 1px solid #b0adad;
+        border-radius: 10px;
+        padding: 10px !important;
+        width: 100%;
+        margin-top: 10px !important;
+    }
 
     #list {
         margin-top: 50px;
@@ -244,13 +257,12 @@ i {
     }
 
     #a-menu {
-        width: 190% !important;
+    
         display: flex;
         justify-content: space-between;
     }
 
     #a-menu1 {
-        width: 190% !important;
         display: flex;
         justify-content: space-between;
     }
@@ -259,6 +271,18 @@ i {
         width: 190% !important;
         display: flex;
         justify-content: space-between;
+    }
+    #faq {
+        display: flex;
+        flex-direction: column !important;
+    }
+    #question-s {
+        margin-left: 20px;
+        width: 80% !important;
+    }
+    #accordionFlushExample {
+        margin-left: 20px;
+        width: 80% !important;
     }
 }
 
