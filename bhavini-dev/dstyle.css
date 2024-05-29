@@ -206,6 +206,12 @@ i {
         flex-direction: column;
     }
 
+    #box {
+        width: 400px;
+        height: 400px;
+        background-color: white;
+        margin-top: 5px !important;
+    }
     #content {
         width: 100%;
     }
@@ -229,6 +235,17 @@ i {
         border-radius: 10px;
         padding: 10px !important;
         width: 100%;
+        margin-top: 10px !important;
+    }
+    #master {
+        margin-top: 450px !important;
+        padding: 10px;
+        display: flex;
+        flex-direction: column !important;
+        align-items: center;
+        justify-content: space-between;
+    }
+    #m-img{
         margin-top: 10px !important;
     }
 
