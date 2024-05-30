@@ -13,7 +13,7 @@ This project is a clone of Coursera, a popular online learning platform. The clo
 Visit Our website: [CourseEra Clone](https://coursera-clone1.netlify.app/)
 
 # screenshots
-![CourseEra Clone Homepage](assets/images/course page.png)
+![CourseEra Clone Homepage](https://github.com/vrajgautam1/courseera-clone/blob/4a0e7edc000144c081cc100029e2d8325202070f/assets/images/course%20page.png)
 
 # Features
 -My Learning page 
