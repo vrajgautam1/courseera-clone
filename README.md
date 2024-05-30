@@ -1,4 +1,4 @@
-# courseera-clone
+<h1 align="center">CourseEra Clone</h1>
 This project is a clone of Coursera, a popular online learning platform. The clone replicates core features of Coursera, such as course browsing, enrollment, user authentication, and video streaming. This project aims to provide a comprehensive learning management system (LMS) for both students and instructors.
 
 
