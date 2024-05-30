@@ -5,9 +5,8 @@ This project is a clone of Coursera, a popular online learning platform. The clo
 - [Demo](#demo)
 - [Screenshots](#screenshots)
 - [Features](#features)
-- [Technologies Used](#technologies-used)
-- [Contributors](#contributing)
-- [Contact](#contact)
+- [Tech-stack](#Tech-Stack)
+- [Contributors](#Contributing)
 
 # demo 
 Visit Our website: [CourseEra Clone](https://coursera-clone1.netlify.app/)
@@ -39,7 +38,15 @@ Visit Our website: [CourseEra Clone](https://coursera-clone1.netlify.app/)
   10. Portfolio Development
 
 
-
-# Tech Stack
+# Tech-Stack
 
   1. Bootstrap V5.1.3
+  2. CSS3
+  3. HTML5
+  4. Jquery
+
+# Contributors
+[Vraj Gautam](https://github.com/vrajgautam1)
+[Jainam Pokal](https://github.com/pokaljainam24)
+[Bhavini Patel](https://github.com/bhavini1105)
+
