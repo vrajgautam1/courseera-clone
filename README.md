@@ -10,9 +10,10 @@ This project is a clone of Coursera, a popular online learning platform. The clo
 - [Contact](#contact)
 
 # demo 
-[CourseEra Clone](https://coursera-clone1.netlify.app/)
+Visit Our website: [CourseEra Clone](https://coursera-clone1.netlify.app/)
 
 # screenshots
+![CourseEra Clone Homepage](assets/images/course page.png)
 
 # Features
 -My Learning page 
