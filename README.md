@@ -22,10 +22,7 @@ Visit Our website: [CourseEra Clone](https://coursera-clone1.netlify.app/)
 ![Find your new career](https://github.com/vrajgautam1/courseera-clone/blob/9eff643e0c3d620278869913a2898f1120a868e1/assets/images/jainam-ss.png)
 
 # Features
--My Learning page 
--Find Your New Career:
 
-# "Find Your New Career" is a feature designed to help students transition from learning to professional opportunities. Here are the detailed features:
   1. Career Guidance
   2. Resume Builder
   3. Job Search
