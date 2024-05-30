@@ -14,7 +14,13 @@ Visit Our website: [CourseEra Clone](https://coursera-clone1.netlify.app/)
 
 # screenshots
 1) Homepage
-![CourseEra Clone Homepage](https://github.com/vrajgautam1/courseera-clone/blob/4a0e7edc000144c081cc100029e2d8325202070f/assets/images/course%20page.png)
+![CourseEra Clone Homepage](https://github.com/vrajgautam1/courseera-clone/blob/9eff643e0c3d620278869913a2898f1120a868e1/assets/images/project-ss.png)
+
+1) Course Page
+![Course page](https://github.com/vrajgautam1/courseera-clone/blob/9eff643e0c3d620278869913a2898f1120a868e1/assets/images/course%20page.png)
+
+1) Find your new career
+![Find your new career](https://github.com/vrajgautam1/courseera-clone/blob/9eff643e0c3d620278869913a2898f1120a868e1/assets/images/jainam-ss.png)
 
 # Features
 -My Learning page 
