@@ -3,18 +3,16 @@ This project is a clone of Coursera, a popular online learning platform. The clo
 
 ## Table of Contents
 - [Demo](#demo)
+- [Screenshots](#screenshots)
 - [Features](#features)
 - [Technologies Used](#technologies-used)
-- [Installation](#installation)
-- [Usage](#usage)
-- [Screenshots](#screenshots)
-- [Project Structure](#project-structure)
-- [Contributing](#contributing)
-- [License](#license)
+- [Contributors](#contributing)
 - [Contact](#contact)
 
 # demo 
 [CourseEra Clone](https://coursera-clone1.netlify.app/)
+
+# screenshots
 
 # Features
 -My Learning page 
